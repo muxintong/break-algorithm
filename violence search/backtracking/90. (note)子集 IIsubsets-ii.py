@@ -11,6 +11,8 @@ class Solution:
     # Input: nums = [1,2,2]
     # Output: [[],[1],[1,2],[1,2,2],[2],[2,2]]
     def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
+        # 【元素可重复的子集问题】
+        # 1.先对nums数组排序
         # 按升序排序，使相同元素靠在一起，后续在递归过程中对于相同元素只处理一次，后续相同元素跳过。
         nums.sort()
         res = []
@@ -32,8 +34,9 @@ class Solution:
                 # right:
                 # 剪枝逻辑，值相同的相邻树枝，只遍历第一条
                 # [[], [1], [1, 2], [1, 2, 2], [2], [2, 2]]
-                if i > start and nums[i] == nums[i - 1]:
-                    continue
+                # 2.回溯方法中，针对排好序的数组：跳过相同元素
+                if i > start and nums[i] == nums[i - 1]: continue
+                    
                 track.append(nums[i])
                 backtrack(i + 1)
                 track.remove(nums[i])
