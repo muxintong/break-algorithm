@@ -1,0 +1,72 @@
+'''
+【回溯算法秒杀所有排列/组合/子集问题】https://labuladong.github.io/algo/4/29/107/
+'''
+
+"""
+【回溯问题】<=>【决策树遍历】<=>【纯暴力穷举】<=>【无重复子问题的递归】：4 key point[choose list + choose + track + end state]
+
+解决一个回溯问题，实际上就是一个决策树的遍历过程。
+
+站在回溯树的一个节点上，你只需要思考 3 个问题：
+1、【选择列表】：也就是你当前可以做的选择 => 对应题目中给出的输入列表
+2、【选择】：选择列表指针i，用于遍历选择列表，作出选择 ，递归过程：
+    def backtrack(i:int[输入列表指针], track:List[存储符合题意的选择，即路径列表])
+        for i in range(len(input_list)):
+            # 2.1 递归出口：选择列表指针i移动至表尾，所有元素均得到处理后，使用return语句返回
+            if i==len(input_list):
+                1.if [satisfy answer]:return True
+                2.or res.append(track[.copy()])
+            # 2.2 核心递归部分：选择列表指针i逐步移动至表尾
+                => 不符合题意的选择：if [choose unsatisfied]: continue
+                                continue语句跳过该选择，进入下一次循环
+                => 符合题意的选择：if [choose satisfied]:
+                                a 选择列表--移除--该选择: input_list.remove(input_list[i])
+                                b 路径列表--加入--该选择: track.append(input_list[i])
+                [if] backtrack(i+1, track) [return]  # 将选择列表指针i后移这一动作打入递归调用过程
+                => 递归调用后撤销【符合题意的选择】，【还原决策树】
+                                a 选择列表--加入--该选择: input_list.append(input_list[i])
+                                b 路径列表--移除--该选择: track.remove(input_list[i])
+
+3、【路径】：存储于已经做出的、符合题意的选择。
+4、【结束条件】：也就是到达决策树底层，无法再做选择的条件。
+
+
+"""
+
+
+# 核心就是 for 循环里面的递归，在递归调用之前「做选择」，在递归调用之后「撤销选择」
+'''
+class Solution:
+    def outer_func(self, nums: List[int]) -> [return_type]:
+    # 记录结果集：存储各个路径列表track
+    result = []
+    # 记录符合题意的选择列表指针i对应的值nums[i]
+    track = []
+    
+    # 仅限排列使用：标记数组used，用于记录nums[i]是否被使用
+    used = [False for i in range(len(nums))] 
+    
+    组合|子集：def backtrack(选择列表指针i, 存储符合题意的选择nums[i]路径列表track):
+    排列：def backtrack(存储符合题意的选择nums[i]路径列表track, 标记数组used):
+        if 满足结束条件:
+            result.add(track)
+            return
+    
+        for 选择列表指针i in range(len(选择列表nums)):
+            1. 选择判断：不符合 or 符合 题意
+            1.1 针对不符合题意的选择：
+                if [choose unsatisfied]: continue
+                    continue语句跳过该选择，进入下一次循环
+            1.2 针对符合题意的选择：记录在存储【符合题意的选择列表指针i对应的值】的 【路径列表track】中
+                将该选择从选择列表移除:used[i]=True
+                路径.add(选择)：track.append(nums[i])
+                
+            2.递归调用：
+            组合|子集：backtrack(选择列表指针i后移一位i+1, 路径列表track) 
+                                # 通过保证元素之间的相对顺序不变【即在递归调用过程中使 列表指针变量i+1】来防止出现重复的子集。
+            排列：backtrack(路径列表track, 记录指针变量i是佛被访问过的used标记数组)
+            
+            3.撤销选择：（递归后撤销选择，还原该决策树，进行下一次决策树递归过程）将符合题意的选择列表指针值 从 路径列表track中移除
+                路径列表.remove(选择):track.remove(nums[i])
+                将该选择再加入选择列表:used[i]=False
+'''
