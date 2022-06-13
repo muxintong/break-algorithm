@@ -46,6 +46,26 @@ class Solution:
             return memory[(i,target)]
 
         return dp(len(nums) - 1, target)
+      
+    def findTargetSumWays_WithoutMemo_TimeLimitError(self, nums: List[int], target: int) -> int:
+        def dp(i: int, target: int) -> int:
+            # base case
+            if i == 0:
+                if nums[i] == 0 and nums[i] == target:
+                    return 2
+                elif nums[i] == target or -nums[i] == target:
+                    return 1
+                else:
+                    return 0
+
+            # recursive
+            ways_add = dp(i - 1, target - nums[i])
+            ways_plus = dp(i - 1, target + nums[i])
+            ways = ways_add + ways_plus
+
+            return ways
+
+        return dp(len(nums) - 1, target)
 
 
 def main():
