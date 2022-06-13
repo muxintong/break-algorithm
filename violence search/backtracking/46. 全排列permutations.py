@@ -42,11 +42,6 @@ class Solution:
         return res
 
 
-
-
-from typing import List
-
-
 class Solution2:
     def permute(self, nums: List[int]) -> List[List[int]]:
         res = []
