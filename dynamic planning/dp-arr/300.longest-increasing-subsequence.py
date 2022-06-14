@@ -1,6 +1,3 @@
-# https://labuladong.github.io/algo/3/24/77/
-
-
 from typing import List
 
 
