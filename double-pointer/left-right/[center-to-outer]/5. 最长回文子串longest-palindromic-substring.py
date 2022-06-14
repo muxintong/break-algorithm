@@ -1,7 +1,3 @@
-"""
-https://leetcode.com/problems/longest-palindromic-substring/submissions/
-"""
-
 class Solution:
     def palindrome(self, s: str, left: int, right: int):
         # NOTE:边界条件
