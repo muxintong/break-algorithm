@@ -37,9 +37,9 @@ class Solution:
         res = 0
         for i in range(m):
             for j in range(n):
+                # 因求岛屿的数量，故是陆地0时结果集加1，并递归【淹没】该陆地周围（上下左右）的所有陆地即可
                 if grid[i][j] == 0:
                     res += 1
-                    # 因求岛屿的数量，故与陆地0待遇数量加1，并递归【淹没】该陆地周围（上下左右）的所有陆地即可
                     dfs(i, j)
         return res
 
