@@ -19,9 +19,8 @@ class Solution:
                 if window[in_win_char] == need[in_win_char]:
                     valid += 1
 
-            # shrink window
+            # update answer
             while right - left + 1 >= len(s1):
-                # update answer
                 if valid == len(need):
                     return True
 
