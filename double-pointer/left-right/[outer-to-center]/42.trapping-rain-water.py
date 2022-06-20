@@ -10,7 +10,7 @@ class Solution:
     def trap(self, height: List[int]) -> int:
         """
         对于柱i，其所能容纳的最大雨水量为：
-        min(l_max[0-i], r_max[i,n] - height[i]
+        min(l_max[0-i], r_max[i,n]) - height[i]
         """
         n = len(height)
         l_max_memo = [0] * n
@@ -41,7 +41,7 @@ class Solution:
     def trap2(self, height: List[int]) -> int:
         """
         对于柱i，其所能容纳的最大雨水量为：
-        min(l_max[0-i], r_max[i,n] - height[i]
+        min(l_max[0-i], r_max[i,n]) - height[i]
         """
         n = len(height)
         # 使用数组作为备忘录
