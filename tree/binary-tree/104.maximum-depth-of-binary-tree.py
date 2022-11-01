@@ -22,7 +22,7 @@ class Solution:
 
 def list_to_binarytree(nums: List[int]):
     def level(index):
-        if index >= len(nums) or nums[index] is None:
+        if index >= len(nums):
             return None
 
         root = TreeNode(nums[index])
