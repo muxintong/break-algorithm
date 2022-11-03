@@ -21,10 +21,9 @@ class Solution:
             root_val = preorder[pre_start]
             # 2.inorder找到root位置，进行左右子树划分
             index = inorder.index(root_val)
-
             root = TreeNode(root_val)
-
             left_size = index - in_start
+
             root.left = build(preorder, pre_start + 1, pre_start + left_size,
                               inorder, in_start, index - 1)
             root.right = build(preorder, pre_start + left_size + 1, pre_end,
