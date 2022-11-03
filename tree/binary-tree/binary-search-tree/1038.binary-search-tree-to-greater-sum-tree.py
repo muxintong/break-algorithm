@@ -20,11 +20,9 @@ class Solution:
             if root is None: return
 
             traverse(root.right)
-
             # inorder
             self.sum += root.val
             root.val = self.sum
-
             traverse(root.left)
 
         traverse(root)

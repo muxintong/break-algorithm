@@ -22,13 +22,11 @@ class Solution:
             if root is None: return
 
             traverse(root.left)
-
             # inorder
             self.rank += 1
             if self.rank == k:
                 self.res = root.val
                 return
-
             traverse(root.right)
 
         traverse(root)
