@@ -32,21 +32,49 @@ class Solution:
                 else:
                     return 0
 
-            # pre recursive:查memory
+            # pre recursive:find in memory
             # NOTE:需要把i和target的组合作为key，而不能仅把i作为key
             #      ！！！即需要把dp方法中所包含的所有可变状态的组合作为key！！！
-            if memory.get((i,target)): return memory[(i,target)]
+            if memory.get((i, target)): return memory[(i, target)]
 
             # recursive:写memory
             ways_add = dp(i - 1, target - nums[i])
-            ways_plus = dp(i - 1, target + nums[i])
-            memory[(i,target)] = ways_add + ways_plus
+            ways_minus = dp(i - 1, target + nums[i])
+
+            # after recursive: write in memory
+            memory[(i, target)] = ways_add + ways_minus
 
             # post recursive:
-            return memory[(i,target)]
+            return memory[(i, target)]
 
         return dp(len(nums) - 1, target)
-      
+
+    def findTargetSumWays2(self, nums: List[int], target: int) -> int:
+        memory = {}
+
+        def dp(i: int, target):
+            # base case
+            if i == len(nums):
+                if target == 0:
+                    return 1
+                else:
+                    return 0
+
+            # before recursive:find in memory
+            if memory.get((i, target)) is not None:
+                return memory[(i, target)]
+
+            # recursive
+            plus = dp(i + 1, target - nums[i])
+            minus = dp(i + 1, target + nums[i])
+
+            # after recursive:write in memory
+            memory[(i, target)] = plus + minus
+
+            return memory[(i, target)]
+
+        return dp(0, target)
+
     def findTargetSumWays_WithoutMemo_TimeLimitError(self, nums: List[int], target: int) -> int:
         def dp(i: int, target: int) -> int:
             # base case
@@ -60,8 +88,8 @@ class Solution:
 
             # recursive
             ways_add = dp(i - 1, target - nums[i])
-            ways_plus = dp(i - 1, target + nums[i])
-            ways = ways_add + ways_plus
+            ways_minus = dp(i - 1, target + nums[i])
+            ways = ways_add + ways_minus
 
             return ways
 
@@ -89,7 +117,7 @@ def main():
     # Output: 128
     # Expected: 256
     solution3 = Solution()
-    print(solution3.findTargetSumWays([0, 0, 0, 0, 0, 0, 0, 0, 1], 1))
+    print(solution3.findTargetSumWays2([0, 0, 0, 0, 0, 0, 0, 0, 1], 1))
 
 
 if __name__ == '__main__':
