@@ -16,6 +16,8 @@ int binarySearch(int[] nums, int target) {
 }
 ```
 
+---
+
 1、为什么 while 循环的条件中是 <=，而不是 <？</br>
  因为初始化 right 的赋值是 nums.length - 1，即最后一个元素的索引，而不是 nums.length.</br>
  这二者可能出现在不同功能的二分查找中，区别是：前者相当于两端都闭区间 [left, right]，</br>
@@ -35,11 +37,20 @@ while(left < right) 的终止条件是 left == right，写成区间的形式就�
 也就是说这区间 [2, 2] 被漏掉了，索引 2 没有被搜索，如果这时候直接返回 -1 就是错误的。
 要用 while(left < right) 需打个补丁：
 ```java
-    //...
-    while(left < right) {
-        // ...
-    }
-    return nums[left] == target ? left : -1;
+//...
+while(left < right) {
+    // ...
+}
+return nums[left] == target ? left : -1;
 ```
+
+---
+
+2、为什么 left = mid + 1，right = mid - 1？有的代码是 right = mid 或者 left = mid？</br>
+首先明确「搜索区间」开闭情况，本算法的搜索区间是两端都闭的，即 [left, right]。</br>
+那么当我们发现索引 mid 不是要找的 target 时，下一步应该去搜索哪里呢？</br>
+当然是去搜索区间 [left, mid-1] 或者区间 [mid+1, right] ，因为 mid 已经搜索过，应该从搜索区间中去除。
+
+---
 
 
