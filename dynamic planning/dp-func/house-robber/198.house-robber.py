@@ -14,8 +14,7 @@ class Solution:
             # 针对nums[i]这一位置有如下两种选择：
             # 不抢i，去下家i+1：dp(i+1)
             # 抢i，去下下家i+2：nums[i]+dp(i+2)
-            res = max(dp(i + 1), nums[i] + dp(i + 2))
-            memory[i] = res
+            memory[i] = max(dp(i + 1), nums[i] + dp(i + 2))
 
             return memory[i]
 
