@@ -21,7 +21,7 @@ for 状态1 in 状态1的所有取值：
 >- 第二个是允许交易的最大次数，
 >- 第三个是当前的持有状态（即之前说的 rest 的状态，我们不妨用 1 表示持有，0 表示没有持有）。
 
-```commandline
+```java
 用一个三维数组就可以装下这几种状态的全部组合：
 dp[i][k][0 or 1]
 0 <= i <= n - 1, 1 <= k <= K
@@ -52,7 +52,7 @@ for 0 <= i < n:
 
 ![image](https://user-images.githubusercontent.com/41592973/203931481-ccefb308-5aba-4a46-803a-f45e73c65f44.png)
 
-```commandline
+```java
 f(0)=f(0).reset | f(1).sell:+price[i]
 f(1)=f(1).reset | f(0).buy:-price[i]
 ------------------------------------------
@@ -78,7 +78,7 @@ NOTE：在 sell 的时候给 k 减小 1 和在 buy 的时候给 k 减小 1 是�
 因为交易是从 buy 开始，如果 buy 的选择不改变交易次数 k 的话，会出现交易次数超出限制的的错误。             
 
     
-```commandline  
+```java
 base case：即最简单的初始已知状态   
 dp[-1][...][0] = 0
 解释：因为 i 是从 0 开始的，所以 i = -1 意味着还没有开始，这时候的利润当然是 0。
@@ -95,7 +95,7 @@ dp[...][0][1] = -infinity
 ---
 
 4.股票问题动规解法通用框架
-```
+```java
 base case：
 dp [i：天数] [k：最大交易次数] [0|1：第i天的股票持有状态，0不持有，1持有]
 base case：1.天数i为-1；2.最大交易次数k为0
@@ -104,11 +104,11 @@ dp[-1][...][1] = dp[...][0][1] = -infinity
 
 状态转移方程：
 for 0 <= i < n:
-for 1 <= k <= K:
-    # for s in {0, 1}:
-    #     dp[i][k][s] = max(buy, sell, rest)
-    dp[i][k][0] = max(dp[i-1][k][0], dp[i-1][k][1] + prices[i])
-    dp[i][k][1] = max(dp[i-1][k][1], dp[i-1][k-1][0] - prices[i])
+    for 1 <= k <= K:
+        # for s in {0, 1}:
+        #     dp[i][k][s] = max(buy, sell, rest)
+        dp[i][k][0] = max(dp[i-1][k][0], dp[i-1][k][1] + prices[i])
+        dp[i][k][1] = max(dp[i-1][k][1], dp[i-1][k-1][0] - prices[i])
 
 ```
 数组索引是 -1 怎么编程表示出来呢，负无穷怎么表示呢？这都是细节问题，有很多方法实现。
@@ -116,7 +116,7 @@ for 1 <= k <= K:
 ---
 problems：121</br>
 直接套状态转移方程，根据 base case，可以做一些化简：
-```commandline
+```java
 for i in n:
     for k in K:
         dp[i][1][0] = max(dp[i-1][1][0], dp[i-1][1][1] + prices[i])
@@ -130,7 +130,7 @@ dp[i][0] = max(dp[i-1][0], dp[i-1][1] + prices[i])
 dp[i][1] = max(dp[i-1][1], -prices[i])
 ```
 直接写出代码：
-```commandline
+```java
 int n = prices.length;
 int[][] dp = new int[n][2];
 for (int i = 0; i < n; i++) {
@@ -141,7 +141,7 @@ return dp[n - 1][0];
 ```
 
 显然 i = 0 时 i - 1 是不合法的索引，这是因为我们没有对 i 的 base case 进行处理，可以这样给一个特化处理：
-```commandline
+```java
 if (i - 1 == -1) {
     dp[i][0] = 0;
     // 根据状态转移方程可得：
@@ -160,7 +160,7 @@ if (i - 1 == -1) {
 ```     
 这样处理 base case 很麻烦，而且注意一下状态转移方程，新状态只和相邻的一个状态有关，</br>
 可以用动态规划的降维打击：空间压缩技巧，不需要用整个 dp 数组，只需要一个变量储存相邻的那个状态就足够了，这样可以把空间复杂度降到 O(1):
-```commandline
+```java
 // 原始版本
 int maxProfit_k_1(int[] prices) {
     int n = prices.length;
@@ -199,7 +199,7 @@ problems 122:
 这道题的特点在于没有给出交易总数 k 的限制，也就相当于 k 为正无穷。</br>
 如果 k 为正无穷，那么就可以认为 k 和 k - 1 是一样的。可以这样改写框架：
 
-```commandline
+```java
 dp[i][k][0] = max(dp[i-1][k][0], dp[i-1][k][1] + prices[i])
 dp[i][k][1] = max(dp[i-1][k][1], dp[i-1][k-1][0] - prices[i])
             = max(dp[i-1][k][1], dp[i-1][k][0] - prices[i])
@@ -248,7 +248,7 @@ int maxProfit_k_inf(int[] prices) {
 第三题，看力扣第 309 题「 最佳买卖股票时机含冷冻期」，也就是 k 为正无穷，但含有交易冷冻期的情况：</br>
 和上一道题一样的，只不过每次 sell 之后要等一天才能继续交易，只要把这个特点融入上一题的状态转移方程即可：
 
-```commandline
+```java
 dp[i][0] = max(dp[i-1][0], dp[i-1][1] + prices[i])
 dp[i][1] = max(dp[i-1][1], dp[i-2][0] - prices[i])
 解释：第 i 天选择 buy 的时候，要从 i-2 的状态转移，而不是 i-1 。
@@ -305,7 +305,7 @@ int maxProfit_with_cool(int[] prices) {
 第四题，看力扣第 714 题「 买卖股票的最佳时机含手续费」，也就是 k 为正无穷且考虑交易手续费的情况：
 
 每次交易要支付手续费，只要把手续费从利润中减去即可，改写方程：
-```commandline
+```java
 dp[i][0] = max(dp[i-1][0], dp[i-1][1] + prices[i])
 dp[i][1] = max(dp[i-1][1], dp[i-1][0] - prices[i] - fee)
 解释：相当于买入股票的价格升高了。
@@ -315,7 +315,7 @@ dp[i][1] = max(dp[i-1][1], dp[i-1][0] - prices[i] - fee)
 ```
 
 直接翻译成代码，注意状态转移方程改变后 base case 也要做出对应改变：
-```commandline
+```java
 // 原始版本
 int maxProfit_with_fee(int[] prices, int fee) {
     int n = prices.length;
@@ -360,12 +360,12 @@ k = 2 和前面题目的情况稍微不同，因为上面的情况都和 k 的�
 这道题 k = 2 和后面要讲的 k 是任意正整数的情况中，对 k 的处理就凸显出来了
 
 原始的状态转移方程，没有可化简的地方
-```commandline
+```java
 dp[i][k][0] = max(dp[i-1][k][0], dp[i-1][k][1] + prices[i])
 dp[i][k][1] = max(dp[i-1][k][1], dp[i-1][k-1][0] - prices[i])
 ```
 按照之前的代码，我们可能想当然这样写代码（错误的）：
-```commandline
+```java
 int k = 2;
 int[][][] dp = new int[n][k + 1][2];
 for (int i = 0; i < n; i++) {
@@ -385,7 +385,7 @@ return dp[n - 1][k][0];
 之前的解法，都在穷举所有状态，只是之前的题目中 k(或为1或为无穷大) 都被化简掉了。
 
 比如说第一题，k = 1 时的代码框架：
-```commandline
+```java
 int n = prices.length;
 int[][] dp = new int[n][2];
 for (int i = 0; i < n; i++) {
@@ -397,7 +397,7 @@ return dp[n - 1][0];
 ```
 但当 k = 2 时，由于没有消掉 k 的影响，所以必须要对 k 进行穷举：
 
-```commandline
+```java
 // 原始版本
 int maxProfit_k_2(int[] prices) {
     int max_k = 2, n = prices.length;
@@ -438,7 +438,7 @@ dp 数组的遍历顺序是怎么确定的：</br>
 这样一想，k = max_k, k-- 的方式是比较合乎实际场景的。
 
 当然，这里 k 取值范围比较小，所以也可以不用 for 循环，直接把 k = 1 和 2 的情况全部列举出来也可以：
-```commandline
+```java
 // 状态转移方程：
 // dp[i][2][0] = max(dp[i-1][2][0], dp[i-1][2][1] + prices[i])
 // dp[i][2][1] = max(dp[i-1][2][1], dp[i-1][1][0] - prices[i])
@@ -446,7 +446,7 @@ dp 数组的遍历顺序是怎么确定的：</br>
 // dp[i][1][1] = max(dp[i-1][1][1], -prices[i])
 ```
 
-```commandline
+```java
 // 空间复杂度优化版本
 int maxProfit_k_2(int[] prices) {
     // base case
@@ -474,7 +474,7 @@ int maxProfit_k_2(int[] prices) {
 如果超过，就没有约束作用了，相当于 k 没有限制的情况， 而这种情况是之前解决过的。
 
 所以我们可以直接把之前的代码重用：
-```commandline
+```java
 int maxProfit_k_any(int max_k, int[] prices) {
     int n = prices.length;
     if (n <= 0) {
@@ -512,7 +512,7 @@ int maxProfit_k_any(int max_k, int[] prices) {
 
 ---
 请你实现如下函数：
-```commandline
+```java
 int maxProfit_all_in_one(int max_k, int[] prices, int cooldown, int fee);
 
 输入股票价格数组 prices，你最多进行 max_k 次交易，
@@ -521,7 +521,7 @@ int maxProfit_all_in_one(int max_k, int[] prices, int cooldown, int fee);
 请你计算并返回可以获得的最大利润。
 ```
 
-```commandline
+```java
 // 同时考虑交易次数的限制、冷冻期和手续费
 int maxProfit_all_in_one(int max_k, int[] prices, int cooldown, int fee) {
     int n = prices.length;
