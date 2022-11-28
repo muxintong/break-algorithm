@@ -47,6 +47,11 @@ for 0 <= i < n:
 ---
 
 3.【状态转移方程式】</br>
+
+状态转移图：持有状态1，不持有0
+
+![image](https://user-images.githubusercontent.com/41592973/203931481-ccefb308-5aba-4a46-803a-f45e73c65f44.png)
+
 ```commandline
 f(0)=f(0).reset | f(1).sell:+price[i]
 f(1)=f(1).reset | f(0).buy:-price[i]
