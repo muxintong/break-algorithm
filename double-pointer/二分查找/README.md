@@ -283,7 +283,7 @@ int right_bound(int[] nums, int target) {
 
 ---
 
-四、逻辑统一</br>
+逻辑统一</br>
 
 >第一个，最基本的二分查找算法：</br>
 ></br>
