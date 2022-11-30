@@ -9,10 +9,10 @@ class Solution:
         # dp [天数i: 1-n] [交易次数j：1-k] [第i天持有状态：0不持有，1持有]
         dp = [[[0] * 2 for j in range(k + 1)] for i in range(n)]
 
-        # k=0时的base case
-        for i in range(n):
-            dp[i][0][0] = 0
-            dp[i][0][1] = -99999
+        # # k=0时的base case
+        # for i in range(n):
+        #     dp[i][0][0] = 0
+        #     dp[i][0][1] = -99999
 
         for i in range(n):
             for j in range(k, 0, -1):
