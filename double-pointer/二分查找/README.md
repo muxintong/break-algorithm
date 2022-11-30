@@ -1,6 +1,8 @@
 ---
 
-[原文地址：https://labuladong.github.io/algo/1/11/](https://labuladong.github.io/algo/1/11/)
+原文地址：
+[https://labuladong.github.io/algo/1/11/](https://labuladong.github.io/algo/1/11/)
+[https://labuladong.github.io/algo/2/20/31/](https://labuladong.github.io/algo/2/20/31/)
 
 ---
 
@@ -391,3 +393,52 @@ NOTE:</br>
 3、如需定义左闭右开的「搜索区间」搜索左右边界，只要在 nums[mid] == target 时做修改即可，搜索右侧时需要减一。</br>
 4、如果将「搜索区间」全都统一成两端都闭，好记，只要稍改 nums[mid] == target 条件处的代码和返回的逻辑即可。</br>
 二分思维：通过已知信息尽可能多地收缩（折半）搜索空间，从而增加穷举效率，快速找到目标。</br>
+
+---
+
+二分搜索的原型就是在「有序数组」中搜索一个元素 target，返回该元素对应的索引。</br>
+如果该元素不存在，那可以返回一个什么特殊值，这种细节问题只要微调算法实现就可实现。</br>
+还有一个重要的问题，如果「有序数组」中存在多个 target 元素，那么这些元素肯定挨在一起，这里就涉及到算法应该返回最左侧的那个 target 元素的索引还是最右侧的那个 target 元素的索引，也就是所谓的「搜索左侧边界」和「搜索右侧边界」，这个也可以通过微调算法的代码来实现。
+在具体的算法问题中，常用到的是「搜索左侧边界」和「搜索右侧边界」这两种场景，很少有让你单独「搜索一个元素」。
+
+</br>因为算法题一般都让你求最值，比如让你求吃香蕉的「最小速度」，让你求轮船的「最低运载能力」，求最值的过程，必然是搜索一个边界的过程
+
+```java
+// 搜索左侧边界
+int left_bound(int[] nums, int target) {
+    if (nums.length == 0) return -1;
+    int left = 0, right = nums.length;
+    
+    while (left < right) {
+        int mid = left + (right - left) / 2;
+        if (nums[mid] == target) {
+            // 当找到 target 时，收缩右侧边界
+            right = mid;
+        } else if (nums[mid] < target) {
+            left = mid + 1;
+        } else if (nums[mid] > target) {
+            right = mid;
+        }
+    }
+    return left;
+}
+
+// 搜索右侧边界
+int right_bound(int[] nums, int target) {
+    if (nums.length == 0) return -1;
+    int left = 0, right = nums.length;
+    
+    while (left < right) {
+        int mid = left + (right - left) / 2;
+        if (nums[mid] == target) {
+            // 当找到 target 时，收缩左侧边界
+            left = mid + 1;
+        } else if (nums[mid] < target) {
+            left = mid + 1;
+        } else if (nums[mid] > target) {
+            right = mid;
+        }
+    }
+    return left - 1;
+}
+```
