@@ -1,4 +1,8 @@
+---
+
 [原文地址：https://labuladong.github.io/algo/1/11/](https://labuladong.github.io/algo/1/11/)
+
+---
 
 # 二分搜索算法
 
@@ -56,6 +60,8 @@ return nums[left] == target ? left : -1;
 比如说给你有序数组 nums = [1,2,2,2,3]，target 为 2，此算法返回的索引是 2。</br>
 但是如果我想得到 target 的左侧边界，即索引 1，或者我想得到 target 的右侧边界，即索引 3。</br>
 一种可能的解决方案：找到一个 target，然后向左或向右线性搜索，但该种做法无法确保二分查找对数级复杂度。
+
+---
 
 ---
 
@@ -280,6 +286,8 @@ int right_bound(int[] nums, int target) {
 }
 ```
 由于 while 的结束条件为 right == left - 1，把上述代码中的 left - 1 都改成 right 也没有问题，这样可能更有利于看出来这是在「搜索右侧边界」。
+
+---
 
 ---
 
