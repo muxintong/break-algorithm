@@ -638,15 +638,15 @@ public int minEatingSpeed(int[] piles, int H) {
 
 # 1011.
 
-在D天内按顺序运输完所有货物，货物不可分割，如何确定运输的最小载重？
-函数签名如下：
+</br>在D天内按顺序运输完所有货物，货物不可分割，如何确定运输的最小载重？
+</br>函数签名如下：
 ```java
 int shipWithDays(int[] weights, int days);
 ```
-1.确定x、f(x)、target分别是什么，并写出函数f代码
-自变量x：题目问什么，什么就是自变量，即船的运载能力就是自变量x。
-运输天数同运载能力成反比，可让f(x)计算当运载能力为x时所需的运载天数。
-函数f(x)的实现如下：
+</br>1.确定x、f(x)、target分别是什么，并写出函数f代码
+</br>自变量x：题目问什么，什么就是自变量，即船的运载能力就是自变量x。
+</br>运输天数同运载能力成反比，可让f(x)计算当运载能力为x时所需的运载天数。
+</br>函数f(x)的实现如下：
 ```java
 //f(x)定义：当运载能力为x时，需要f(x)天才能运完所有货物。
 //f(x)是关于x的单调递减函数
@@ -663,15 +663,16 @@ int f(int[] weights, int x) {
         days++;
     }
     return days;
+}        
 ```
 
-target即为运输天数D，需在f(x)==D的约束条件下计算出船的最小载重。
-
-2. 找到x的取值范围作为二分搜索的搜索区间，初始化left和right变量。
-x的取值范围即为：船的最小最大载重为多少？
-船的最小载重：weights数组中元素的最大值，因为每次至少得装走一件货物。
-最大载重：weights数组所有元素之和，也就是一次把所有货物都装走。
-确定搜索区间[left,right):
+</br>target即为运输天数D，需在f(x)==D的约束条件下计算出船的最小载重。
+</br>
+</br>2. 找到x的取值范围作为二分搜索的搜索区间，初始化left和right变量。
+</br>x的取值范围即为：船的最小最大载重为多少？
+</br>船的最小载重：weights数组中元素的最大值，因为每次至少得装走一件货物。
+</br>最大载重：weights数组所有元素之和，也就是一次把所有货物都装走。
+</br>确定搜索区间[left,right):
 ```java
 public int shipWithDays(int[] weights, int days) {
     int left = 0;
@@ -686,8 +687,142 @@ public int shipWithDays(int[] weights, int days) {
     //
 ```
 
-3.确定是左边界还是有边界算法：
-自变量x为船的运载能力，f(x)是关于x的单调递减函数，target即为运输总天数限制D，
-题目要求我们计算船的最小载重，即x需要尽可能的小：
+</br>3.确定是左边界还是有边界算法：
+</br>自变量x为船的运载能力，f(x)是关于x的单调递减函数，target即为运输总天数限制D，
+</br>题目要求我们计算船的最小载重，即x需要尽可能的小：
 ![image](https://user-images.githubusercontent.com/41592973/205254109-8d3db269-cd63-45c1-80a0-03473253b9da.png)
 
+结合上图可知为左边界二分搜索算法：
+```java
+//f(x)定义：当运载能力为x时，需要f(x)天才能运完所有货物。
+//f(x)是关于x的单调递减函数
+int f(int[] weights, int x) {
+    int days = 0;
+    for (int i = 0; i < weights.length; ) {
+        //尽可能多装货物
+        int capacity = x;
+        while (i < weights.length) {
+            if (i < weights[i]) break;
+            else capacity -= weights[i];
+            i++;
+        }
+        days++;
+    }
+    return days;
+}  
+
+public int shipWithDays(int[] weights, int days) {
+    int left = 0;
+    //NOTE:right是开区间，所以额外+1
+    int right = 1;
+    
+    for (int w:weights) {
+        left = Math.max(left, w);
+        right += w;
+    }
+    
+    while (left < right) {
+        int mid = left + (right - left) / 2;
+        if (f(weights, mid) == days) {
+            //收缩右边界确定左边界
+            right = mid;
+        } else if (f(weights, mid) < days) {
+            //需增大f的返回值
+            right = mid;
+        } else if (f(weights, mid) > days) {
+            //需要减小f的返回值
+            left = mid + 1;
+        }
+    }
+    
+    return left;
+}    
+
+//合并多余if分支后优化代码如下：
+public int shipWithDays(int[] weights, int days) {
+    int left = 0;
+    //NOTE:right是开区间，所以额外+1
+    int right = 1;
+    
+    for (int w:weights) {
+        left = Math.max(left, w);
+        right += w;
+    }
+    
+    while (left < right) {
+        int mid = left + (right - left) / 2;
+        if (f(weights, mid) <= days) {
+            right = mid;
+        } else if (f(weights, mid) > days) {
+            left = mid + 1;
+        }
+    }
+    
+    return left;
+}  
+```
+
+---
+
+# 410.
+
+</br>给出输入数组nums和数字m，将nums分割成m个子数组。
+</br>不止一种分割方法，每种分割方法会将nums分割成m个子数组，这m个子数组中存在一个和最大的子数组，
+</br>现求一种分割方法，该分割方法分割出的最大子数组和是所有分割方法中最大子数组和最小的。
+</br>算法返回这个分割方法对应的最大子数组和。
+</br>
+</br>等价上述货物运输问题：
+</br>现有一艘货船，有若干货物，每个货物的重量是nums[i],需在m天内将这些货物运走，求货船的最小载重是多少？
+</br>等价于1011【在D天内送达包裹的能力】：
+</br>货船每天运走的货物就是nums的一个子数组；
+</br>在m天内运完就是将nums划分为m个子数组；
+</br>让货船的载重尽可能小，就是让所有子数组中最大的那个子数组之和尽可能小。
+
+```java
+int splitArray(int[] nums, int m) {
+    return shipWithDays(nums, m);
+}
+
+//f(x)定义：当运载能力为x时，需要f(x)天才能运完所有货物。
+//f(x)是关于x的单调递减函数
+int f(int[] weights, int x) {
+    int days = 0;
+    for (int i = 0; i < weights.length; ) {
+        //尽可能多装货物
+        int capacity = x;
+        while (i < weights.length) {
+            if (i < weights[i]) break;
+            else capacity -= weights[i];
+            i++;
+        }
+        days++;
+    }
+    return days;
+}  
+
+//合并多余if分支后优化代码如下：
+public int shipWithDays(int[] weights, int days) {
+    int left = 0;
+    //NOTE:right是开区间，所以额外+1
+    int right = 1;
+    
+    for (int w:weights) {
+        left = Math.max(left, w);
+        right += w;
+    }
+    
+    while (left < right) {
+        int mid = left + (right - left) / 2;
+        if (f(weights, mid) <= days) {
+            right = mid;
+        } else if (f(weights, mid) > days) {
+            left = mid + 1;
+        }
+    }
+    
+    return left;
+}  
+```
+
+**若题目中存在单调关系，即使用二分搜索的前提条件：数组有序；
+就可以尝试使用二分搜索的思路来解决，弄清f的单调性及二分搜索的种类，画出f的单调函数求解。**
