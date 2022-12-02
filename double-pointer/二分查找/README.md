@@ -581,3 +581,107 @@ public int minEatingSpeed(int[] piles, int H) {
 </br>题目要求计算最小速度，即x要尽可能的小：
 </br>
 ![image](https://user-images.githubusercontent.com/41592973/205247551-7e320ef8-1586-4f49-b81b-19095f521634.png)
+
+结合上图可知为搜索x的左侧边界。
+```java
+//若吃香蕉的速度为x根/小时，则需要f(x)小时吃完所有的香蕉。
+//f(x)是x上的单调递减函数
+int f(int[] piles, int x) {
+    int hours = 0;
+    for(int i = 0; i < piles.length; i++) {
+        hours += piles[i] / x;
+        if (piles[i] % x > 0) {
+            hours++;
+        }
+    }
+    return hours;
+}
+
+public int minEatingSpeed(int[] piles, int H) {
+    int left = 1;
+    int right = 1000000000 + 1;
+    
+    while (left < right) {
+        int mid = left + (right - left) / 2;
+        if (f(piles, mid) == H) {
+            //收缩右边界确定左边界
+            right = mid;
+        } else if (f(piles, mid) < H) {
+            //增大f返回值
+            right = mid;
+        } else if (f(piles, mid) > H) {
+            //减小f的返回值
+            left = mid + 1；
+        }
+    }
+    return left;
+} 
+
+//针对上述if分治合并优化如下：
+public int minEatingSpeed(int[] piles, int H) {
+    int left = 1;
+    int right = 1000000000 + 1;
+    
+    while (left < right) {
+        int mid = left + (right - left) / 2;
+        if (f(piles, mid) <= H) {
+            right = mid;
+        } else if (f(piles, mid) > H) {
+            left = mid + 1；
+        }
+    }
+    return left;
+}         
+```
+
+---
+
+# 1011.
+
+在D天内按顺序运输完所有货物，货物不可分割，如何确定运输的最小载重？
+函数签名如下：
+```java
+int shipWithDays(int[] weights, int days);
+```
+1.确定x、f(x)、target分别是什么，并写出函数f代码
+自变量x：题目问什么，什么就是自变量，即船的运载能力就是自变量x。
+运输天数同运载能力成反比，可让f(x)计算当运载能力为x时所需的运载天数。
+函数f(x)的实现如下：
+```java
+//f(x)定义：当运载能力为x时，需要f(x)天才能运完所有货物。
+//f(x)是关于x的单调递减函数
+int f(int[] weights, int x) {
+    int days = 0;
+    for (int i = 0; i < weights.length; ) {
+        //尽可能多装货物
+        int capacity = x;
+        while (i < weights.length) {
+            if (i < weights[i]) break;
+            else capacity -= weights[i];
+            i++;
+        }
+        days++;
+    }
+    return days;
+```
+
+target即为运输天数D，需在f(x)==D的约束条件下计算出船的最小载重。
+
+2. 找到x的取值范围作为二分搜索的搜索区间，初始化left和right变量。
+x的取值范围即为：船的最小最大载重为多少？
+船的最小载重：weights数组中元素的最大值，因为每次至少得装走一件货物。
+最大载重：weights数组所有元素之和，也就是一次把所有货物都装走。
+确定搜索区间[left,right):
+```java
+public int shipWithDays(int[] weights, int days) {
+    int left = 0;
+    //NOTE:right是开区间，所以额外+1
+    int right = 1;
+    
+    for (int w:weights) {
+        left = Math.max(left, w);
+        right += w;
+    }
+    
+    //
+```
