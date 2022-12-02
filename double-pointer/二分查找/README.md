@@ -580,3 +580,4 @@ public int minEatingSpeed(int[] piles, int H) {
 </br>
 </br>题目要求计算最小速度，即x要尽可能的小：
 </br>
+![image](https://user-images.githubusercontent.com/41592973/205247551-7e320ef8-1586-4f49-b81b-19095f521634.png)
