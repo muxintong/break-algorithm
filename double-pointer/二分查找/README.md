@@ -685,3 +685,7 @@ public int shipWithDays(int[] weights, int days) {
     
     //
 ```
+
+3.确定是左边界还是有边界算法：
+自变量x为船的运载能力，f(x)是关于x的单调递减函数，target即为运输总天数限制D，
+题目要求我们计算船的最小载重，即x需要尽可能的小：
