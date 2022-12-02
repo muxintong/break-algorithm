@@ -396,6 +396,8 @@ NOTE:</br>
 
 ---
 
+# 二分搜索的泛化
+
 二分搜索的原型就是在「有序数组」中搜索一个元素 target，返回该元素对应的索引。</br>
 如果该元素不存在，那可以返回一个什么特殊值，这种细节问题只要微调算法实现就可实现。</br>
 还有一个重要的问题，如果「有序数组」中存在多个 target 元素，那么这些元素肯定挨在一起，这里就涉及到算法应该返回最左侧的那个 target 元素的索引还是最右侧的那个 target 元素的索引，也就是所谓的「搜索左侧边界」和「搜索右侧边界」，这个也可以通过微调算法的代码来实现。
@@ -442,3 +444,139 @@ int right_bound(int[] nums, int target) {
     return left - 1;
 }
 ```
+
+**什么问题适用于二分搜索技巧？**
+</br>需从题目中提取出自变量x，关于x的函数f(x)，以及目标值target。
+</br>同时，x、f(x)、target还需满足一下条件：
+</br>1. f(x)必须是x上的单调函数（递增递减均可），即使用二分搜索前数组需有序。
+</br>2. 题目是让你计算满足越苏条件f(x)==target时的x值。
+</br>
+</br>例：
+</br>nums：升序排序的有序数组
+</br>target：目标元素
+</br>计算target在数组中的索引位置，如果有多个目标元素，返回最小的索引。
+</br>
+</br>上述要求即为求【左侧边界】的题型，对应x、f(x)、target分别如下：
+</br>x：数组中元素的索引可认为时自变量x，则函数关系f(x)如下
+```java
+//函数f(x)是关于自变量x的单调递增函数
+//入参nums不变，不是自变量，可以忽略
+int f(int x, int[] nums) {
+  return nums[x];
+}
+```
+</br>函数f即相当于正向访问数组nums，因为nums为升序排序的有序数组，所以f(x)就是x上的单调递增函数。
+</br>求解元素target的最左索引？即等价于满足f(x)==target的x最小值为多少？
+</br>画出单调函数，即可运用二分搜索框架：
+```java
+//函数f(x)是关于自变量x的单调递增函数
+int f(int x, int[] nums) {
+    return nums[x];
+}
+
+int left_bound(int[] nums, int target) {
+    if (nums.length == 0) return -1;
+    int left = 0, right = nums.length;
+    
+    while (left < right) {
+        int mid = left + (right - left) / 2;
+        if (f(mid, nums) == target) {
+            //收缩右边界=》确定左边界
+            right=mid;
+        } else if (f(mid, nums) < target) {
+            left = mid +1;
+        } else if (f(mid, nums) > target) {
+            right = mid;
+        }
+    }
+    return left;
+```
+
+```java
+//函数f是关于自变量x的单调函数
+int f(int x) {
+    // ...
+}
+
+//主函数，在f(x)==target的约束下求x的最值
+int solution(int[] nums, int target) {
+    if (nums.length == 0) return -1;
+    //自变量x的最小值
+    int left = ...;
+    //自变量x的最大值
+    int right = ... + 1;
+    
+    while (left < right) {
+        int mid = left + (right - left) / 2;
+        if (f(mid) == target) {
+            //求左边界还是右边界？
+            ...
+        } else if (f(mid) < target) {
+            //如何是f(x)更大？
+            ...
+        } else if (f(mid) > target) {
+            //如何是f(x)更小？
+            ...
+        }
+    }
+    return left;
+```
+</br>二分搜索算法步骤：
+</br>1. 确定x、f(x)、target分别为多少，并写出函数f(x)
+</br>2. 找到x的取值范围作为二分搜索的区间，初始化left和right变量
+</br>3. 根据题目要求，确定应该使用左侧边界还是右侧边界的二分搜索算法。
+
+---
+
+# 875
+</br>珂珂每小时最多只吃一堆香蕉，如果吃不完的话留到下一小时再吃；
+</br>如果吃完了这一堆还有胃口，也只会等到下一个小时才会吃下一堆。
+</br>他想在警卫回来之前吃完所有的香蕉，让我们确定吃香蕉的最小速度K。
+```java
+int minEatingSpeed(int[] piles, int H);
+```
+</br>按照如下步骤应用二分搜索算法：
+</br>1. 确定x、f(x)、target分别是什么，并写出函数f(x)代码。
+</br>二分搜索的本质就是在搜索自变量x。
+</br>所以题目所求即为自变量，即珂珂的吃香蕉速度。
+</br>在x上的单调函数f(x)?吃香蕉的速度越快，吃完所有香蕉堆所需的时间就越小，速度和时间就是一个单调关系。
+</br>故f(x)的定义如下：若吃香蕉的速度为x根/小时，则需要f(x)小时吃完所有的香蕉。
+```java
+//若吃香蕉的速度为x根/小时，则需要f(x)小时吃完所有的香蕉。
+//f(x)是x上的单调递减函数
+int f(int[] piles, int x) {
+    int hours = 0;
+    for(int i = 0; i < piles.length; i++) {
+        hours += piles[i] / x;
+        if (piles[i] % x > 0) {
+            hours++;
+        }
+    }
+    return hours;
+}
+```
+</br>target:吃香蕉的时间限制H即为target，是对f(x)返回值的最大约束。
+</br>
+</br>2. 找到x的取值范围作为二分搜索的搜索区间，初始化left和right变量。
+</br>即吃香蕉的速度的取值范围：
+</br>最小速度：1
+</br>最大速度：piles数组中元素的最大值，因为每小时最大吃一堆香蕉。
+</br>两种选择确定二分搜索的区间：
+</br>使用for循环遍历piles数组，计算最大值。
+</br>看题目中piles的取值范围约束，给right初始化一个取值范围之外的值。
+</br>使用题目中的约束条件确定二分搜索的区间：
+```java
+public int minEatingSpeed(int[] piles, int H) {
+    int left = 1;
+    //NOTE:right是开区间，所以在加1
+    int right = 1000000000 + 1;
+    
+}
+```
+</br>3. 根据题目要求，确定是搜索左边界还是右边界
+</br>自变量x：吃香蕉的速度
+</br>f(x)：关于自变量x的单调递减函数
+</br>target：吃香蕉的时间限制H
+</br>
+</br>题目要求计算最小速度，即x要尽可能的小：
+</br>
