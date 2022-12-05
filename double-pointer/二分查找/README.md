@@ -449,7 +449,7 @@ int right_bound(int[] nums, int target) {
 </br>需从题目中提取出自变量x，关于x的函数f(x)，以及目标值target。
 </br>同时，x、f(x)、target还需满足一下条件：
 </br>1. f(x)必须是x上的单调函数（递增递减均可），即使用二分搜索前数组需有序。
-</br>2. 题目是让你计算满足越苏条件f(x)==target时的x值。
+</br>2. 题目是让你计算满足约束条件f(x)==target时的x值。
 </br>
 </br>例：
 </br>nums：升序排序的有序数组
@@ -482,7 +482,7 @@ int left_bound(int[] nums, int target) {
         int mid = left + (right - left) / 2;
         if (f(mid, nums) == target) {
             //收缩右边界=》确定左边界
-            right=mid;
+            right = mid;
         } else if (f(mid, nums) < target) {
             left = mid +1;
         } else if (f(mid, nums) > target) {
@@ -512,10 +512,10 @@ int solution(int[] nums, int target) {
             //求左边界还是右边界？
             ...
         } else if (f(mid) < target) {
-            //如何是f(x)更大？
+            //如何使f(x)更大？
             ...
         } else if (f(mid) > target) {
-            //如何是f(x)更小？
+            //如何使f(x)更小？
             ...
         }
     }
@@ -561,9 +561,11 @@ int f(int[] piles, int x) {
 </br>即吃香蕉的速度的取值范围：
 </br>最小速度：1
 </br>最大速度：piles数组中元素的最大值，因为每小时最大吃一堆香蕉。
+</br>
 </br>两种选择确定二分搜索的区间：
-</br>使用for循环遍历piles数组，计算最大值。
-</br>看题目中piles的取值范围约束，给right初始化一个取值范围之外的值。
+</br>- 使用for循环遍历piles数组，计算最大值。
+</br>- 看题目中piles的取值范围约束，给right初始化一个取值范围之外的值。
+</br>
 </br>使用题目中的约束条件确定二分搜索的区间：
 ```java
 public int minEatingSpeed(int[] piles, int H) {
@@ -611,13 +613,13 @@ public int minEatingSpeed(int[] piles, int H) {
             right = mid;
         } else if (f(piles, mid) > H) {
             //减小f的返回值
-            left = mid + 1；
+            left = mid + 1;
         }
     }
     return left;
 } 
 
-//针对上述if分治合并优化如下：
+//针对上述if分支合并优化如下：合并if分支有利于提高运行速度
 public int minEatingSpeed(int[] piles, int H) {
     int left = 1;
     int right = 1000000000 + 1;
@@ -627,7 +629,7 @@ public int minEatingSpeed(int[] piles, int H) {
         if (f(piles, mid) <= H) {
             right = mid;
         } else if (f(piles, mid) > H) {
-            left = mid + 1；
+            left = mid + 1;
         }
     }
     return left;
