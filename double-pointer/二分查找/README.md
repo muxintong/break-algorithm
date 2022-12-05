@@ -658,7 +658,7 @@ int f(int[] weights, int x) {
         //尽可能多装货物
         int capacity = x;
         while (i < weights.length) {
-            if (cap < weights[i]) break;
+            if (capacity < weights[i]) break;
             else capacity -= weights[i];
             i++;
         }
@@ -704,7 +704,7 @@ int f(int[] weights, int x) {
         //尽可能多装货物
         int capacity = x;
         while (i < weights.length) {
-            if (cap < weights[i]) break;
+            if (capacity < weights[i]) break;
             else capacity -= weights[i];
             i++;
         }
