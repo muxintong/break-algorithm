@@ -139,6 +139,101 @@ int findMinArrowShots(int[][] intvs) {
  
 # 动规算法 vs 贪心算法
 
-贪心可理解为一种特殊的动规问题，贪心具有一些更为特殊的性质，可以进一步降低动规算法的时间复杂度。
+</br>贪心可理解为一种特殊的动规问题，贪心具有一些更为特殊的性质，可以进一步降低动规算法的时间复杂度。
+</br>
+</br>动规问题：一般为求最值形式，如最长子序列、最小编辑距离、最长公共子串等。
+</br>贪心算法作为特殊的动规也是一样，也为求最值问题。
+</br>
 
 ## [55.跳跃游戏](https://leetcode.cn/problems/jump-game/)
+
+</br>该问题本质上也是求最值问题：
+</br>通过题目中的跳跃规则，最多能跳多远？
+</br>若能越过最后一格则返回true，否则返回false。
+</br>
+</br>故该问题可用动规及贪心算法求解，贪心算法如下：
+</br>
+
+```java
+//算法每一步都计算从当前位置最远能够跳到哪里，
+//然后同全局最优的最远位置farthest对比，
+//通过每一步的最优解更新全局的最优解就是贪心算法。
+boolean canJump(int[] nums) {
+    int n = nums.length;
+    int farthest = 0;
+    for (int i = 0; i < n - 1; i++) {
+        // 不断计算能跳到的最远距离
+        farthest = Math.max(farthest, i + nums[i]);
+        // 可能碰到了 0，卡住跳不动了
+        if (farthest <= i) {
+            return false;
+        }
+    }
+    return farthest >= n - 1;
+}
+```
+
+## [45.跳跃游戏II](https://leetcode.cn/problems/jump-game/)
+
+</br>题目保证你一定可以跳到最后一格，请问你最少要跳多少次才能跳过去?
+</br>
+</br>动规： 采用自顶向下的dp-func解法。
+</br>dp方法定义：从索引p跳到最后一格，至少需要 dp(nums, p) 步
+
+```java
+//从索引p跳到最后一格，至少需要 dp(nums, p) 步
+int dp(int[] nums, int p);
+```
+
+所求即为dp(nums, 0)，base case就是当p超过最后一个时不需要跳跃。
+
+```java
+if (p >= nums.length - 1) {
+    return 0;
+}
+```
+
+动规解法可先暴力穷举所有可能的跳法，通过备忘录memory消除重叠子问题，取其中最小的值即为答案：
+
+```java
+int[] memo;
+// 主函数
+public int jump(int[] nums) {
+    int n = nums.length;
+    // 备忘录都初始化为 n，相当于 INT_MAX
+    // 因为从 0 跳到 n - 1 最多 n - 1 步
+    memo = new int[n];
+    Arrays.fill(memo, n);
+
+    return dp(nums, 0);
+}
+
+// 定义：从索引 p 跳到最后一格，至少需要 dp(nums, p) 步
+int dp(int[] nums, int p) {
+    int n = nums.length;
+    // base case
+    if (p >= n - 1) {
+        return 0;
+    }
+    // 子问题已经计算过
+    if (memo[p] != n) {
+        return memo[p];
+    }
+    int steps = nums[p];
+    // 你可以选择跳 1 步，2 步...
+    for (int i = 1; i <= steps; i++) {
+        // 穷举每一个选择
+        // 计算每一个子问题的结果
+        int subProblem = dp(nums, p + i);
+        // 取其中最小的作为最终结果
+        memo[p] = Math.min(memo[p], subProblem + 1);
+    }
+    return memo[p];
+}
+```
+
+状态：当前所站的索引p
+选择：可以跳出的步数
+算法时间复杂度：递归深度 * 每次递归需要的时间复杂度 = O(N^2)，leetcode部分超时。
+
+贪心优点：贪心选择性质
