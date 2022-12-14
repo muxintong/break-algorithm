@@ -308,9 +308,9 @@ int jump(int[] nums) {
 
 ![image](https://user-images.githubusercontent.com/41592973/207555022-5f2337ad-8b8a-4fd2-87e3-b896004ebfc6.png)
 
-然后通过第二个视频区间使用贪心算法选择出第三个视频，以此类推，直至覆盖区间[0, T]，或无法覆盖返回-1.
-
-本例需使用两个变量curEnd和nextEnd：
+</br>然后通过第二个视频区间使用贪心算法选择出第三个视频，以此类推，直至覆盖区间[0, T]，或无法覆盖返回-1.
+</br>
+</br>本例需使用两个变量curEnd和nextEnd：
 
 ![image](https://user-images.githubusercontent.com/41592973/207556010-5e560a97-efdc-4036-a4e1-a5ea413b224c.png)
 
