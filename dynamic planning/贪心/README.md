@@ -119,3 +119,18 @@ int findMinArrowShots(int[][] intvs);
 
 ![image](https://user-images.githubusercontent.com/41592973/207494539-910a0489-de23-45a6-acd2-5c5b3893d953.png)
 
+```java
+int findMinArrowShots(int[][] intvs) {
+    // ...
+
+    for (int[] interval : intvs) {
+        int start = interval[0];
+        // NOTE: 把 >= 改成 > 
+        if (start > x_end) {
+            count++;
+            x_end = interval[1];
+        }
+    }
+    return count;
+}
+```
