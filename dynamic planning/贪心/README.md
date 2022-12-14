@@ -134,3 +134,11 @@ int findMinArrowShots(int[][] intvs) {
     return count;
 }
 ```
+
+---
+ 
+# 动规算法 vs 贪心算法
+
+贪心可理解为一种特殊的动规问题，贪心具有一些更为特殊的性质，可以进一步降低动规算法的时间复杂度。
+
+## [55.跳跃游戏](https://leetcode.cn/problems/jump-game/)
