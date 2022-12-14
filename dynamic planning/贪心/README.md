@@ -10,7 +10,8 @@
 
 ---
 
-## [435.无重叠区间](https://leetcode.cn/problems/non-overlapping-intervals/)
+## 最多有几个区间不会重叠问题
+
 </br>给你多个形如[start,end]的闭区间，算出这些区间中最多有几个互不相交的区间。
 ```java
  int intervalSchedule(int[][] intvs);
@@ -32,13 +33,82 @@
 </br>2、把所有与 x 区间相交的区间从区间集合 intvs 中删除。
 </br>3、重复步骤 1 和 2，直到 intvs 为空为止。之前选出的那些 x 就是最大不相交子集。
 </br>把这个思路实现成算法的话，可以按每个区间的 end 数值升序排序，因为这样处理之后实现步骤 1 和步骤 2 都方便很多。
-算法实现：
-对于步骤1：由于事先按照每个区间的end数值升序排序，所以最小的end即为第一个元素。
-关键：如何移除与x相交的区间，选择下一轮循环的x。
-由于事先按照每个区间的end升序排序，故所有与x相交的区间必然会与x的end相交；
-如果一个区间不想与x的end相交，它的start必然要大于等于x的end：
+</br>算法实现：
+</br>对于步骤1：由于事先按照每个区间的end数值升序排序，所以最小的end即为第一个元素。
+</br>关键：如何移除与x相交的区间，选择下一轮循环的x。
+</br>由于事先按照每个区间的end升序排序，故所有与x相交的区间必然会与x的end相交；
+</br>如果一个区间不想与x的end相交，它的start必然要大于等于x的end：
 
 ![image](https://user-images.githubusercontent.com/41592973/207490723-ee059be9-ebdb-474d-8051-17817e444b8a.png)
 
+```java
+public int intervalSchedule(int[][] intvs) {
+    if (intvs.length == 0) return 0;
+    // 按 end 升序排序
+    Arrays.sort(intvs, new Comparator<int[]>() {
+        public int compare(int[] a, int[] b) {
+            return a[1] - b[1];
+        }
+    });
+    // 至少有一个区间不相交
+    int count = 1;
+    // 排序后，第一个区间就是 x
+    int x_end = intvs[0][1];
+    for (int[] interval : intvs) {
+        int start = interval[0];
+        if (start >= x_end) {
+            // 找到下一个选择的区间了
+            count++;
+            x_end = interval[1];
+        }
+    }
+    return count;
+}
+```
 
+---
+
+## [435.无重叠区间](https://leetcode.cn/problems/non-overlapping-intervals/)
+
+</br>应用：435.无重叠区间
+</br>输入一个区间的集合，若想使其中的区间都互不重叠，至少需要移除几个区间？
+
+```java
+int eraseOverlapIntervals(int[][] intvs);
+```
+
+</br>其中输入区间的终点总是大于起点，边界相等的区间不互相重叠。
+</br>例：
+></br>输入: intervals = [[1,2],[2,3],[3,4],[1,3]]
+></br>输出: 1
+></br>解释: 移除 [1,3] 后，剩下的区间没有重叠。
+
+</br>数组长度 - 最多有多少个区间不会重叠 = 至少需要移除的区间个数
+
+```java
+int eraseOverlapIntervals(int[][] intervals) {
+    int n = intervals.length;
+    return n - intervalSchedule(intervals);
+}
+```
+
+---
+
+## [452.用最少的箭头射爆气球](https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons/)
+
+</br>假设在二维平面上有很多圆形气球，这些圆形投影到x轴上会形成一个个区间。
+</br>给你输入这些区间，你沿着x轴前进，可以垂直向上射箭，请问你至少要射几箭才能把这些气球全部射爆？
+
+```java
+int findMinArrowShots(int[][] intvs);
+```
+
+例：
+></br>输入：points = [[10,16],[2,8],[1,6],[7,12]]
+></br>输出：2
+></br>解释：气球可以用2支箭来爆破:
+></br>-在x = 6处射出箭，击破气球[2,8]和[1,6]。
+></br>-在x = 11处发射箭，击破气球[10,16]和[7,12]。
+
+该问题同区间调度算法，如果最多有n个不重叠的区间，那么就至少需要n个箭头射穿所有区间：
 
