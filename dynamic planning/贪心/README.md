@@ -252,3 +252,5 @@ int dp(int[] nums, int p) {
 
 </br>for循环中会陷入递归计算子问题，此处即为动规时间复杂度高的原因。
 </br>优化：不递归，仅判断哪个选择最优即可：
+
+![image](https://user-images.githubusercontent.com/41592973/207517607-482bc903-b3d8-4cff-8d88-d4fa531ab541.png)
