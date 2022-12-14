@@ -306,3 +306,5 @@ int jump(int[] nums) {
 </br>当确定clips[0]一定会被选择后，就可以选出下一个会被选择的视频：
 </br>比较所有 **起点** 小于 **clips[0][1]** 的区间，根据贪心策略，他们中终点最大的那个区间就是第二个会被选中的视频。
 
+![image](https://user-images.githubusercontent.com/41592973/207555022-5f2337ad-8b8a-4fd2-87e3-b896004ebfc6.png)
+
