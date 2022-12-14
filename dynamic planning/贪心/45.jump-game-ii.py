@@ -29,6 +29,7 @@ class Solution:
         farthest = 0
         # jumps记录跳跃步数
         jumps = 0
+        # NOTE: i最后的取值范围，不可取到n-1
         for i in range(n - 1):
             farthest = max(farthest, nums[i] + i)
             if end == i:

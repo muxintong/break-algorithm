@@ -5,6 +5,7 @@ class Solution:
     def canJump(self, nums: List[int]) -> bool:
         n = len(nums)
         farthest = 0
+        # NOTE: i最后的取值范围不可取到n-1
         for i in range(n - 1):
             farthest = max(farthest, i + nums[i])
             if farthest <= i:
