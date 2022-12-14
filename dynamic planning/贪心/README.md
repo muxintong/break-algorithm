@@ -299,3 +299,5 @@ int jump(int[] nums) {
 </br>2.如果有几个短视频的起点都相同，那么应选择最长即终点值最大的视频。
 </br>以上即为贪心策略，基于以上两点，将clips按照起点升序排列，起点相同的按照终点降序排列。
 </br>最后得到的区间顺序：
+
+![image](https://user-images.githubusercontent.com/41592973/207553644-7c9f5616-b64c-451c-883a-6403e78edde1.png)
