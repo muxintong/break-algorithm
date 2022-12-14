@@ -12,8 +12,8 @@
 
 ## [435.无重叠区间](https://leetcode.cn/problems/non-overlapping-intervals/)
 </br>给你多个形如[start,end]的闭区间，算出这些区间中最多有几个互不相交的区间。
-```python
- def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:
+```java
+ int intervalSchedule(int[][] intvs);
 ```
 </br>例：intvs = [[1,3], [2,4], [3,6]]， 这些区间最多有 2 个区间互不相交，即 [[1,3], [3,6]]， 你的算法应该返回 2。
 </br>**注意边界相同并不算相交。**
