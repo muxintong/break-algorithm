@@ -273,3 +273,5 @@ int jump(int[] nums) {
     return jumps;
 }
 ```
+
+![image](https://user-images.githubusercontent.com/41592973/207518575-54ba7d4d-f2e4-4c6b-a624-894c69a44132.png)
