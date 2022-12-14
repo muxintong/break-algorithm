@@ -29,6 +29,7 @@ class Solution:
                 # print("window[%c]:%d\n" % (in_win_char,window[in_win_char]))
                 window[in_win_char] += 1
                 # print("window[%c]:%d\n" % (in_win_char,window[in_win_char]))
+
                 if window[in_win_char] == need[in_win_char]:
                     valid += 1
                     # print("window[%c]:%d\n" % (in_win_char,window[in_win_char]))
