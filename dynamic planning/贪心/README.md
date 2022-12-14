@@ -116,3 +116,6 @@ int findMinArrowShots(int[][] intvs);
 
 </br>该问题同区间调度调度算法的区别为：如果两个区间的边界触碰不算重叠；
 </br>而该问题中，箭头如果碰到气球的边界气球也会爆炸，即相当与区间边界触碰也算重叠：
+
+![image](https://user-images.githubusercontent.com/41592973/207494539-910a0489-de23-45a6-acd2-5c5b3893d953.png)
+
