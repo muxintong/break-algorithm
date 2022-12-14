@@ -112,3 +112,5 @@ int findMinArrowShots(int[][] intvs);
 
 该问题同区间调度算法，如果最多有n个不重叠的区间，那么就至少需要n个箭头射穿所有区间：
 
+![image](https://user-images.githubusercontent.com/41592973/207494084-b55f4630-f049-4817-8f7a-011cd73787ce.png)
+
