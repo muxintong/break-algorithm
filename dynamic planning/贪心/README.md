@@ -37,6 +37,7 @@
 关键：如何移除与x相交的区间，选择下一轮循环的x。
 由于事先按照每个区间的end升序排序，故所有与x相交的区间必然会与x的end相交；
 如果一个区间不想与x的end相交，它的start必然要大于等于x的end：
+
 ![image](https://user-images.githubusercontent.com/41592973/207490723-ee059be9-ebdb-474d-8051-17817e444b8a.png)
 
 
