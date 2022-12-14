@@ -254,3 +254,22 @@ int dp(int[] nums, int p) {
 </br>优化：不递归，仅判断哪个选择最优即可：
 
 ![image](https://user-images.githubusercontent.com/41592973/207517607-482bc903-b3d8-4cff-8d88-d4fa531ab541.png)
+
+如上，站在位置0，可以向前跳1、2、3步，最优跳数为2，因为2的吓一跳区间值最大。
+以上即为贪心选择性质，无需递归计算所有选择的具体结果通过比较求最值，只需做出最优选择即可。
+
+```java
+int jump(int[] nums) {
+    int n = nums.length;
+    int end = 0, farthest = 0;
+    int jumps = 0;
+    for (int i = 0; i < n - 1; i++) {
+        farthest = Math.max(nums[i] + i, farthest);
+        if (end == i) {
+            jumps++;
+            end = farthest;
+        }
+    }
+    return jumps;
+}
+```
