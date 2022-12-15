@@ -111,3 +111,42 @@ def merge(intervals):
     return res
 
 ```
+
+---
+
+# 区间交集问题
+
+## [986.区间列表的交集](https://leetcode.cn/problems/interval-list-intersections/)
+
+</br>给定两个由一些闭区间组成的列表，每个区间列表承兑不相交，且已经排序。
+</br>返回这两个区间列表的交集。
+</br>
+</br>NOTE：区间左右都是闭区间
+</br>
+</br>解决区间问题：首先排序，题目已经排好序，
+</br>接下来使用两个索引指针p1、p2遍历集合A、B找出所有交集：
+</br>使用[left1, right1]、[left2, right2]表示在集合A、B中的两个区间；
+</br>两个区间存在交集的所有可能情况：
+</br>
+</br>交集值应为两个区间中左边界大的max(left1, left2)，右边界小的min(right1, right2)。
+</br>
+</br>关于索引指针p1、p2前进条件的判定：
+</br>关于p1、p2索引指针是否前进只取决于右侧边界值，右侧边界值小的前移。
+
+```python
+# A, B 形如 [[0,2],[5,10]...]
+def intervalIntersection(A, B):
+    i, j = 0, 0 # 双指针
+    res = []
+    while i < len(A) and j < len(B):
+        a1, a2 = A[i][0], A[i][1]
+        b1, b2 = B[j][0], B[j][1]
+        # 两个区间存在交集
+        if b2 >= a1 and a2 >= b1:
+            # 计算出交集，加入 res
+            res.append([max(a1, b1), min(a2, b2)])
+        # 指针前进
+        if b2 < a2: j += 1
+        else:       i += 1
+    return res
+```
