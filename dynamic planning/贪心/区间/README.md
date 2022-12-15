@@ -148,19 +148,25 @@ def merge(intervals):
 
 
 ```python
-# A, B 形如 [[0,2],[5,10]...]
-def intervalIntersection(A, B):
-    i, j = 0, 0 # 双指针
-    res = []
-    while i < len(A) and j < len(B):
-        a1, a2 = A[i][0], A[i][1]
-        b1, b2 = B[j][0], B[j][1]
-        # 两个区间存在交集
-        if b2 >= a1 and a2 >= b1:
-            # 计算出交集，加入 res
-            res.append([max(a1, b1), min(a2, b2)])
-        # 指针前进
-        if b2 < a2: j += 1
-        else:       i += 1
-    return res
+class Solution:
+    def intervalIntersection(self, firstList: List[List[int]], secondList: List[List[int]]) -> List[List[int]]:
+        # 两个集合的索引指针p1、p2
+        p1 = 0
+        p2 = 0
+
+        res = []
+        while p1 < len(firstList) and p2 < len(secondList):
+            left1, right1 = firstList[p1][0], firstList[p1][1]
+            left2, right2 = secondList[p2][0], secondList[p2][1]
+            # 两个区间存在交集的条件
+            if left1 <= right2 and right1 >= left2:
+                # 计算出交集加入到结果集
+                res.append([max(left1, left2), min(right1, right2)])
+            # 指针前移：右侧边界值小的指针前移
+            if right2 < right1:
+                p2 += 1
+            elif right1 < right2:
+                p1 += 1
+
+        return res
 ```
