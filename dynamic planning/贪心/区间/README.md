@@ -72,3 +72,42 @@ int removeCoveredIntervals(int[][] intvs) {
     return intvs.length - res;
 }
 ```
+
+---
+
+# 区间合并问题
+
+## [56.合并区间](https://leetcode.cn/problems/merge-intervals/)
+
+</br>给出一个区间的集合，合并所有重叠的区间。
+</br>解决区间问题：先排序，后画出所有可能位置情况。
+</br>一个区间可表示为[start, end]，在区间调度问题中，需按照end排序，以满足贪心选择性质；
+</br>对于区间合并问题，按start或end排序均可；
+</br>本例按照start升序排列：
+</br>
+</br>
+</br>对于几个相交区间合并后的结果区间x来说：
+</br>start为所有相交区间中最小的； end为所有相交区间中最大的。
+
+```java
+# intervals 形如 [[1,3],[2,6]...]
+def merge(intervals):
+    if not intervals: return []
+    # 按区间的 start 升序排列
+    intervals.sort(key=lambda intv: intv[0])
+    res = []
+    res.append(intervals[0])
+
+    for i in range(1, len(intervals)):
+        curr = intervals[i]
+        # res 中最后一个元素的引用
+        last = res[-1]
+        if curr[0] <= last[1]:
+            # 找到最大的 end
+            last[1] = max(last[1], curr[1])
+        else:
+            # 处理下一个待合并区间
+            res.append(curr)
+    return res
+
+```
