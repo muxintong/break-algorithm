@@ -91,7 +91,8 @@ int removeCoveredIntervals(int[][] intvs) {
 </br>对于几个相交区间合并后的结果区间x来说：
 </br>start为所有相交区间中最小的； end为所有相交区间中最大的：
 
-![image](https://user-images.githubusercontent.com/41592973/207791028-d33c86c3-9894-48a7-9984-0da27b9d132b.png)
+![image](https://user-images.githubusercontent.com/41592973/207791172-527a468a-64cd-4ac5-83c8-4dae0370070e.png)
+
 
 
 ```java
