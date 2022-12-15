@@ -84,10 +84,15 @@ int removeCoveredIntervals(int[][] intvs) {
 </br>一个区间可表示为[start, end]，在区间调度问题中，需按照end排序，以满足贪心选择性质；
 </br>对于区间合并问题，按start或end排序均可；
 </br>本例按照start升序排列：
-</br>
-</br>
+
+![image](https://user-images.githubusercontent.com/41592973/207790929-42b78a57-0dc9-4b16-bae8-6487064d0f91.png)
+
+
 </br>对于几个相交区间合并后的结果区间x来说：
-</br>start为所有相交区间中最小的； end为所有相交区间中最大的。
+</br>start为所有相交区间中最小的； end为所有相交区间中最大的：
+
+![image](https://user-images.githubusercontent.com/41592973/207791028-d33c86c3-9894-48a7-9984-0da27b9d132b.png)
+
 
 ```java
 # intervals 形如 [[1,3],[2,6]...]
