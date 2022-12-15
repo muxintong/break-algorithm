@@ -124,7 +124,7 @@ def merge(intervals):
 
 ## [986.区间列表的交集](https://leetcode.cn/problems/interval-list-intersections/)
 
-</br>给定两个由一些闭区间组成的列表，每个区间列表承兑不相交，且已经排序。
+</br>给定两个由一些闭区间组成的列表，每个区间列表成对不相交，且已经排序。
 </br>返回这两个区间列表的交集。
 </br>
 </br>NOTE：区间左右都是闭区间
@@ -133,11 +133,19 @@ def merge(intervals):
 </br>接下来使用两个索引指针p1、p2遍历集合A、B找出所有交集：
 </br>使用[left1, right1]、[left2, right2]表示在集合A、B中的两个区间；
 </br>两个区间存在交集的所有可能情况：
-</br>
+
+![image](https://user-images.githubusercontent.com/41592973/207818779-9f7acadf-6e15-4a79-a21b-8dd403018165.png)
+
+
 </br>交集值应为两个区间中左边界大的max(left1, left2)，右边界小的min(right1, right2)。
-</br>
+
+![image](https://user-images.githubusercontent.com/41592973/207818873-22658d33-99e0-4ab3-a956-9afd29d18d73.png)
+
 </br>关于索引指针p1、p2前进条件的判定：
 </br>关于p1、p2索引指针是否前进只取决于右侧边界值，右侧边界值小的前移。
+
+![image](https://user-images.githubusercontent.com/41592973/207818976-9fb73de3-8b83-4cce-b0c0-77569dc92c7d.png)
+
 
 ```python
 # A, B 形如 [[0,2],[5,10]...]
