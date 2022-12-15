@@ -4,25 +4,26 @@ from typing import List
 class Solution:
     def videoStitching(self, clips: List[List[int]], time: int) -> int:
         if time == 0: return 0
+        
         # 对clips区间进行排序：按照起点升序排列，若起点相同则按终点降序排序
         clips.sort(key=lambda x: (x[0], -x[1]))
 
         # 记录选择的短视频个数
         res = 0
-        curEnd = 0
-        nextEnd = 0
+        cur_end = 0
+        next_end = 0
 
         i = 0
         n = len(clips)
-        while i < n and clips[i][0] <= curEnd:
+        while i < n and clips[i][0] <= cur_end:
             # 在第res个视频的区间内基于贪心规则选择下一个视频
-            while i < n and clips[i][0] <= curEnd:
-                nextEnd = max(nextEnd, clips[i][1])
+            while i < n and clips[i][0] <= cur_end:
+                next_end = max(next_end, clips[i][1])
                 i += 1
             # 找到下一个视频，更新curEnd
             res += 1
-            curEnd = nextEnd
-            if curEnd >= time:
+            cur_end = next_end
+            if cur_end >= time:
                 # 已经可以拼凑出[0, time]，返回i结果
                 return res
         # 无法拼凑出区间[0, time]
