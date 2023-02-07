@@ -32,7 +32,6 @@ class Solution:
 
         def traverse(s: int) -> None:
             # 递归出口：
-            # if s == n - 1:
             if s == n - 1:
                 res.append(path.copy())
                 return
