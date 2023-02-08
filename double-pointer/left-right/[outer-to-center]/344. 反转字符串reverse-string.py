@@ -25,14 +25,14 @@ class Solution:
 def main():
     # Input: s = ["h","e","l","l","o"]
     # Output: ["o","l","l","e","h"]
-    # s = ["h", "e", "l", "l", "o"]
+    s = ["h", "e", "l", "l", "o"]
     solution1 = Solution()
     solution1.reverseString(s)
     print(s)
 
     # Input: s = ["H","a","n","n","a","h"]
     # Output: ["h","a","n","n","a","H"]
-    s = ["H","a","n","n","a","h"]
+    s = ["H", "a", "n", "n", "a", "h"]
     solution2 = Solution()
     solution2.reverseString(s)
     print(s)

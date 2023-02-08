@@ -9,7 +9,6 @@ class Solution:
         # expand window
         for right, in_win_char in enumerate(s):
             # update window
-
             window.setdefault(in_win_char, 0)
             window[in_win_char] += 1
 
@@ -18,7 +17,6 @@ class Solution:
                 # shrink window
                 out_win_char = s[left]
                 left += 1
-
                 # update window
                 window[out_win_char] -= 1
 

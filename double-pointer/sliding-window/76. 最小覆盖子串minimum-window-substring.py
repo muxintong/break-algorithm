@@ -19,17 +19,15 @@ class Solution:
         min_str = ""
         # expand window:
         # Note:enumerate只能用于for循环，不能用于while循环
+        # right：右窗口指针，右移扩大窗口
+        # win_in_char：移入窗口中的字符
         for right, in_win_char in enumerate(s):
-            # right：右窗口指针，右移扩大窗口
-            # win_in_char：移入窗口中的字符
-
             # update window
             if in_win_char in need.keys():
                 window.setdefault(in_win_char, 0)
                 # print("window[%c]:%d\n" % (in_win_char,window[in_win_char]))
                 window[in_win_char] += 1
                 # print("window[%c]:%d\n" % (in_win_char,window[in_win_char]))
-
                 if window[in_win_char] == need[in_win_char]:
                     valid += 1
                     # print("window[%c]:%d\n" % (in_win_char,window[in_win_char]))

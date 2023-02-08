@@ -38,7 +38,7 @@ def main():
     # Output ""
     # Expected "a"
     soution2 = Solution()
-    print(soution2.longestPalindrome("aa"))
+    print(soution2.longestPalindrome("a"))
 
 
 if __name__ == '__main__':
