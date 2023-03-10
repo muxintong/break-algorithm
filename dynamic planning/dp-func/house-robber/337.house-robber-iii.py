@@ -24,6 +24,7 @@ class Solution:
             rob = root.val \
                   + (dp(root.left.left) + dp(root.left.right)) if root.left is not None else 0 \
                   + (dp(root.right.left) + dp(root.right.right)) if root.right is not None else 0
+
             memory[root] = max(rob, not_rob)
 
             return memory[root]

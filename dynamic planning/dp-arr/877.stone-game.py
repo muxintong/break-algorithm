@@ -107,7 +107,7 @@ class Solution:
                 # 做选择：选择左 or 右
                 left = piles[i] + dp[i + 1][j].second
                 right = piles[j] + dp[i][j - 1].second
-                # 先手左选择：先手会选择左右两侧最大的结果，其选择影响后手的选择
+                # 先手做选择：先手会选择左右两侧最大的结果，其选择影响后手的选择
                 if left > right:
                     dp[i][j].first = left
                     dp[i][j].second = dp[i + 1][j].first  # 后手变为先手
