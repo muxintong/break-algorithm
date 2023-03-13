@@ -6,6 +6,7 @@ class Solution:
     （先排序+相同元素仅处理一次：保证去重）
     先对输入列表排序，在回溯算法的递归调用中通过对相同元素只处理一次的方法进行去重
     '''
+
     def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
         # 最终结果集res：存储各个track
         res = []
@@ -27,7 +28,7 @@ class Solution:
 
             for i in range(start, len(candidates), 1):
                 # 去重保证：2.排序后，针对相同元素仅处理一次
-                if i>start and candidates[i]==candidates[i-1]:
+                if i > start and candidates[i] == candidates[i - 1]:
                     continue
                 # 2.1 选择判断：是否符合题意
                 # 若不符合：
@@ -47,7 +48,7 @@ class Solution:
 
         backtrack(start, track_sum)
         return res
-    
+
     def combinationSum2_TimeLimitError(self, candidates: List[int], target: int) -> List[List[int]]:
         res = []
         track = []

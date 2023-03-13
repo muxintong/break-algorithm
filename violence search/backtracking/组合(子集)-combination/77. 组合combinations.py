@@ -18,7 +18,7 @@ class Solution:
                 res.append(track.copy())
                 return
 
-                # NOTE:指针变量i每次从start位开始递归
+            # NOTE:指针变量i每次从start位开始递归
             for i in range(start, n + 1, 1):
                 track.append(i)
                 backtrack(i + 1)

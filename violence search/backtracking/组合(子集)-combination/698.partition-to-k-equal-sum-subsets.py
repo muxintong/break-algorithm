@@ -58,8 +58,8 @@ def main():
     # Input: nums = [730,580,401,659,5524,405,1601,3,383,4391,4485,1024,1175,1100,2299,3908], k = 4
     # sum=28668  /  4 = 7167
     # Output: false
-    # solution3 = Solution()
-    # print(solution3.canPartitionKSubsets(nums=[730,580,401,659,5524,405,1601,3,383,4391,4485,1024,1175,1100,2299,3908], k=4))
+    solution3 = Solution()
+    print(solution3.canPartitionKSubsets(nums=[730,580,401,659,5524,405,1601,3,383,4391,4485,1024,1175,1100,2299,3908], k=4))
 
 
 if __name__ == '__main__':

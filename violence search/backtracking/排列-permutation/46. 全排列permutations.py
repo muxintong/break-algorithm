@@ -8,6 +8,7 @@ class Solution:
     '''
     【排列（元素无重不可复选）】
     '''
+
     def permute(self, nums: List[int]) -> List[List[int]]:
         # 最终结果集result：存储track
         res = []
@@ -17,7 +18,7 @@ class Solution:
         # 标记数组used，用于记录nums[i]是否被使用
         used = [False for j in range(len(nums))]
 
-        def backtrack(used: List[bool])->None:
+        def backtrack(used: List[bool]) -> None:
             # 结束条件：当track的长度等于nums的长度时，说明已经完成了一个全排列
             if len(track) == len(nums):
                 # NOTE：此处添加的是track的副本，否则当后续撤销选择时，track指向的内容将不存在，导致res全为空
