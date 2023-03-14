@@ -11,13 +11,12 @@ class ListNode:
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
         # NOTE:虚拟头结点的使用，否则对于特殊边界情况需特殊处理
-        dummy=ListNode(-1)
-        dummy.next=head
+        dummy = ListNode(-1)
+        dummy.next = head
         # Note:删除节点n时需找到节点n的前驱，由于是倒数，故其前一个节点是n+1，而不是n-1
         precusor_n = self.findNthFromEnd(dummy, n + 1)
         precusor_n.next = precusor_n.next.next
         return dummy.next
-
 
     def findNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
         p1 = head

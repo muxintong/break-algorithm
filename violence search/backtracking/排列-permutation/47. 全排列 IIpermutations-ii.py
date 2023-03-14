@@ -8,6 +8,7 @@ class Solution:
     '''
     【排列（元素可重不可复选）】
     '''
+
     def permuteUnique(self, nums: List[int]) -> List[List[int]]:
         nums.sort()
         self.res = []
@@ -29,7 +30,7 @@ class Solution:
             check[i] = 1
             self.backtrack(sol + [nums[i]], nums, check)
             check[i] = 0
-            
+
     def permuteUnique_wrong1(self, nums: List[int]) -> List[List[int]]:
         res = []
         track = []
@@ -57,7 +58,7 @@ class Solution:
         res_nodup_tuple = list(set([tuple(i) for i in res]))
         res_nodup_list = [list(i) for i in res_nodup_tuple]
         return res_nodup_list
-    
+
     def permuteUnique_wrong2(self, nums: List[int]) -> List[List[int]]:
         res = []
         track = []
@@ -75,7 +76,7 @@ class Solution:
                 # if i > 0 and nums[i] == nums[i - 1] and used[i-1]: continue
 
                 if used[i]: continue
-                if i > 0 and nums[i] == nums[i - 1] and not used[i-1]: continue
+                if i > 0 and nums[i] == nums[i - 1] and not used[i - 1]: continue
                 # if i > 0 and nums[i] == nums[i - 1] and used[i-1]: continue
 
                 used[i] = True
@@ -115,18 +116,18 @@ def backtrack(self, sol, nums, check):
 
 
 def main():
-    # # Input: nums = [1,1,2]
-    # # Output:
-    # # [[1,1,2],
-    # #  [1,2,1],
-    # #  [2,1,1]]
-    # solution1 = Solution()
-    # print(solution1.permuteUnique(nums=[1, 1, 2]))
-    #
-    # # Input: nums = [1,2,3]
-    # # Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
-    # solution2 = Solution()
-    # print(solution2.permuteUnique(nums=[1, 2, 3]))
+    # Input: nums = [1,1,2]
+    # Output:
+    # [[1,1,2],
+    #  [1,2,1],
+    #  [2,1,1]]
+    solution1 = Solution()
+    print(solution1.permuteUnique(nums=[1, 1, 2]))
+
+    # Input: nums = [1,2,3]
+    # Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
+    solution2 = Solution()
+    print(solution2.permuteUnique(nums=[1, 2, 3]))
 
     # Input:
     # [2,2,1,1]
@@ -137,7 +138,9 @@ def main():
     solution3 = Solution()
     print(solution3.permuteUnique([2, 2, 1, 1]))
     # print(solution3.permuteUnique_wrong1([2, 2, 1, 1]))
-    print(solution3.permuteUnique_wrong2([2, 2, 1, 1]))
+    # print(solution3.permuteUnique_wrong2([2, 2, 1, 1]))
+
+    print(solution3.permuteUnique([2, 2, 2]))
 
 
 if __name__ == '__main__':
