@@ -2,6 +2,7 @@
 给你一个字符串 s 。我们要把这个字符串划分为尽可能多的片段，同一字母最多出现在一个片段中。
 注意，划分结果需要满足：将所有划分结果按顺序连接，得到的字符串仍然是 s 。
 返回一个表示每个字符串片段的长度的列表。
+https://books.halfrost.com/leetcode/ChapterFour/0700~0799/0763.Partition-Labels/
 """
 from typing import List
 
@@ -13,14 +14,16 @@ class Solution:
             window.setdefault(c, 0)
             window[c] += 1
 
+        visited = []
+        for c in s:
+            visited[c] = False
+
         left = 0
         right = 0
         res = []
-        win={}
         for right, in_win_char in enumerate(s):
-            win.setdefault(in_win_char,0)
-            win[in_win_char]+=1
-
+            window[in_win_char] -= 1
+            visited[in_win_char]=1
 
 
 def main():
