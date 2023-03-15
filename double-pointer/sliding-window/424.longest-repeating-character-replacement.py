@@ -6,14 +6,15 @@ class Solution:
     滑动过程中，用窗口长度减去窗口中出现频次最大的字符的长度，若值大于k，则需减小窗口长度知道等于k
 
     """
-    def characterReplacement(self, s: str, k: int) -> int:
-        window={}
-        left=0
-        right=0
-        res=0
-        for s_r in s:
-            right+=1
-            window.setdefault(s_r,0)
-            window[s_r]+=1
 
-            while right-left+1
+    def characterReplacement(self, s: str, k: int) -> int:
+        window = {}
+        left = 0
+        right = 0
+        res = 0
+        for s_r in s:
+            right += 1
+            window.setdefault(s_r, 0)
+            window[s_r] += 1
+
+            while right - left + 1

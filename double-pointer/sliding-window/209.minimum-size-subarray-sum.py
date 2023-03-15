@@ -16,12 +16,13 @@ class Solution:
         # expand window
         for right, num in enumerate(nums):
             sum += num
-            # update answer
+
             while sum >= target:
+                # update answer
                 res = min(res, right - left + 1)
-                sum -= nums[left]
                 # shrink window
                 left += 1
+                sum -= nums[left]
 
         return 0 if res == len(nums) + 1 else res
 
