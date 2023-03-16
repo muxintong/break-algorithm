@@ -2,7 +2,6 @@ from typing import List
 
 """
 给定一个含有 n 个正整数的数组和一个正整数 target 。
-
 找出该数组中满足其和 ≥ target 的长度最小的 连续子数组 [numsl, numsl+1, ..., numsr-1, numsr] ，并返回其长度。如果不存在符合条件的子数组，返回 0 。
 """
 
@@ -18,11 +17,15 @@ class Solution:
             sum += num
 
             while sum >= target:
-                # update answer
+                # NOTE：注意区别如下两部分代码
                 res = min(res, right - left + 1)
-                # shrink window
-                left += 1
                 sum -= nums[left]
+                left += 1
+                #
+                # res = min(res, right - left)
+                # left += 1
+                # sum -= nums[left]
+                # 使用第一种扩大缩小窗口的对称性形式
 
         return 0 if res == len(nums) + 1 else res
 
