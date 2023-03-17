@@ -24,22 +24,18 @@ class Solution:
     """
 
     def numRescueBoats(self, people: List[int], limit: int) -> int:
+        if len(people) == 0: return 0
+        people.sort()
+        l = 0
+        r = len(people) - 1
         res = 0
-        i = 0
-        while i < len(people):
-            if people[i] == limit:
-                res += 1
-                i += 1
-            if people[i] < limit:
-                if people[i] + people[i + 1] <= limit:
-                    i += 2
-                elif people[i] + people[i + 1] > limit:
-                    i += 1
-                res += 1
-            if i == len(people) - 1:
-                res += 1
-                break
-
+        while l <= r:
+            if people[l] + people[r] <= limit:
+                l += 1
+                r -= 1
+            elif people[l] + people[r] > limit:
+                r -= 1
+            res += 1
         return res
 
 
