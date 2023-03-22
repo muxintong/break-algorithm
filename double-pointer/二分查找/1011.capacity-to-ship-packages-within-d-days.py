@@ -4,20 +4,15 @@ from typing import List
 class Solution:
     # 设题目所求运输的载重为自变量x，f为当运载能力为x时的运输天数days
     def f(self, weights: List[int], x: int):
-        days = 0
-        # NOTE:此处的while循环不能写成如下for循环的形式，因为for循环的最后有多余的i自增操作
-        # for i in range(0, len(weights)):
-        i = 0
-        while i < len(weights):
-            # 尽可能多装货物
-            capacity = x
-            while i < len(weights):
-                if capacity < weights[i]:
-                    break
-                else:
-                    capacity -= weights[i]
-                    i += 1
-            days += 1
+        cap = x
+        days = 1
+        for w in weights:
+            if cap < w:
+                days += 1
+                cap = x
+                cap -= w
+            elif cap >= w:
+                cap -= w
 
         return days
 
