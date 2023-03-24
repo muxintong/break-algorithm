@@ -5,6 +5,7 @@ class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
         memory = dict()
 
+        # 1. dp(i)方法含义：以nums[i]结尾的最长子数组长度为dp(i)
         def dp(i: int):
             # base case
             if i == 0:
