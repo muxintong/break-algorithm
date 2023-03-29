@@ -179,6 +179,86 @@ class LRUCache {
         int deleteKey = deleteNode.key;
         map.remove(deleteKey);
     }    
-            
+    
+    // get方法，不存在返回-1，key存在返回响应val，并将其提升为最近使用的
+    public int get(int key) {
+        if(!map.containsKey(key)) {
+            return -1;
+        }
+        
+        // 将该key提升为最近使用的
+        makeRecently(key);
+        return map.get(key).val;
+    }
+             
+    public void put(int key, int val) {
+        // 若该key存在：需删除旧有数据，插入新数据作为最近使用的元素
+        if (map.containsKey(key) {
+            deleteKey(key);
+            addRecently(key, val);
+            return;
+        }
+        
+        // 添加新项之前需判断是否达最大容量
+        if (cap == cache.size) {
+            removeLeastRecently(key);
+        }    
+        
+        // 若该key不存在，直接添加该项为最近使用的
+        addRecently(key, val);
+    }        
+```
 
+使用Java内置类型LinkedHashMap实现上述功能：
+```java
+class LRUCache {
+    int cap;
+    LinkedHashMap<Integer, Integer> cache = new LinkedHashMap<>();
+    
+    public LRUCache(int capacity) {
+        this.cap = capacity;
+    }
+    
+    private void addRecently(int key) {
+        int val = cache.get(key);
+        // 删除旧key
+        cache.remove(key);
+        // 重新将该项添加到队尾变为最近使用项
+        cache.put(key, val);
+    }
+        
+    public int get(int key) {
+        if (!cache.containsKey(key)) {
+            return -1;
+        }
+        
+        // 将key变为最近使用
+        makeRecently(key);
+        return cache.get(key);
+    }
+    
+    public void put(int key, int val) {
+        if (cache.containsKey(key)) {
+            // 修改key值
+            cache.put(key, val);
+            // 将该key提升为最近使用的
+            makeRecenty(key);
+            return;
+        } 
+        
+        // 添加前需判断是否达最大容量限制，若容量已满，需删除旧key才可添加新key
+        if (cache.size() >= this.cap) {
+            // 链表表头就是最久未使用的元素
+            int oldKey = cache.keySet().iterator().next();
+            // 删除旧key
+            cache.remove(oldKey);
+        }
+        
+        // 添加新key
+        cache.put(key, val);
+    }
+    
+        
+                           
+    
 ```
