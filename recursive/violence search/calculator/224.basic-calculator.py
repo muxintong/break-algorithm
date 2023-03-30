@@ -20,29 +20,21 @@ class Solution:
             stack = []
             num = 0
             sign = '+'
-            for i in range(len(s)):
-                if s[i].isdigit():
-                    num = num * 10 + num(s[i])
-                    return
+            for i, v in enumerate(self.s):
+                if v.isdigit():
+                    num = num * 10 + int(i)
 
-                # base case: 当遇到左括号时开启递归调用
-                if s[i] == '(': self.calculate(s[i:])
+                if v.isdigit() == False and v != ' ' or i == len(s) - 1:
+                    if v == '+':
+                        stack.append(+v)
+                    if v == '-':
+                        stack.append(-v)
 
-                if s[i].isdigit() == False and s[i] == ' ' or i == len(s) - 1:  # NOTE:
-                    if s[i] == '+':
-                        stack.append(+num)
+                for s in stack:
+                    self.res += s
 
-                    if s[i] == '-':
-                        stack.append(-num)
-
-                    if s[i]=='*':
-                        pre=stack.pop()
-                        stack.append(pre*num)
-
-                    if s[i]=='/'
-
-                # base case：当遇到右括号时结束递归调用
-                if s[i] == ')': break
+        helper()
+        return res
 
 
 def main():

@@ -2,398 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49548cc4-5df9-4379-9a5f-d0f8ea12d176" name="Changes" comment="tree">
-      <change afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/526.beautiful-arrangement.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/double-pointer/linked-list/160. 相交链表intersection-of-two-linked-lists.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/double-pointer/linked-list/2.Add Two Numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/double-pointer/linked-list/2.Add Two Numbers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/KMP/28.find-the-index-of-the-first-occurrence-in-a-string.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/KMP/28.find-the-index-of-the-first-occurrence-in-a-string.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/KMP/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/KMP/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-arr/1143. Longest Common Subsequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-arr/1143. Longest Common Subsequence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-arr/300.longest-increasing-subsequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-arr/300.longest-increasing-subsequence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-arr/312.burst-balloons.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-arr/312.burst-balloons.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-arr/354. Russian Doll Envelopes.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-arr/354. Russian Doll Envelopes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-arr/486.predict-the-winner.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-arr/486.predict-the-winner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-arr/877.stone-game.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-arr/877.stone-game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-arr/stock/121.best-time-to-buy-and-sell-stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-arr/stock/121.best-time-to-buy-and-sell-stock.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-arr/stock/122.best-time-to-buy-and-sell-stock-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-arr/stock/122.best-time-to-buy-and-sell-stock-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-arr/stock/123.best-time-to-buy-and-sell-stock-iii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-arr/stock/123.best-time-to-buy-and-sell-stock-iii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-arr/stock/188.best-time-to-buy-and-sell-stock-iv.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-arr/stock/188.best-time-to-buy-and-sell-stock-iv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-arr/stock/309.best-time-to-buy-and-sell-stock-with-cooldown.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-arr/stock/309.best-time-to-buy-and-sell-stock-with-cooldown.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-arr/stock/714.best-time-to-buy-and-sell-stock-with-transaction-fee.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-arr/stock/714.best-time-to-buy-and-sell-stock-with-transaction-fee.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-arr/stock/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-arr/stock/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/10..py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/10..py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/10.regular-expression-matching.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/10.regular-expression-matching.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/1025.divisor-game.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/1025.divisor-game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/1048.longest-string-chain.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/1048.longest-string-chain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/1049.last-stone-weight-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/1049.last-stone-weight-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/1105.filling-bookcase-shelves.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/1105.filling-bookcase-shelves.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/1137.n-th-tribonacci-number.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/1137.n-th-tribonacci-number.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/1143. Longest Common Subsequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/1143. Longest Common Subsequence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/115.distinct-subsequences.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/115.distinct-subsequences.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/118.pascals-triangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/118.pascals-triangle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/119.pascals-triangle-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/119.pascals-triangle-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/120.triangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/120.triangle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/1235.maximum-profit-in-job-scheduling.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/1235.maximum-profit-in-job-scheduling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/124.binary-tree-maximum-path-sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/124.binary-tree-maximum-path-sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/131.palindrome-partitioning.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/131.palindrome-partitioning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/1463.cherry-pickup-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/1463.cherry-pickup-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/152.maximum-product-subarray.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/152.maximum-product-subarray.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/1641.count-sorted-vowel-strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/1641.count-sorted-vowel-strings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/1646.get-maximum-in-generated-array.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/1646.get-maximum-in-generated-array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/1653.minimum-deletions-to-make-string-balanced.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/1653.minimum-deletions-to-make-string-balanced.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/1654.minimum-jumps-to-reach-home.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/1654.minimum-jumps-to-reach-home.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/1655.distribute-repeating-integers.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/1655.distribute-repeating-integers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/1659.maximize-grid-happiness.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/1659.maximize-grid-happiness.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/1664.ways-to-make-a-fair-array.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/1664.ways-to-make-a-fair-array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/1681.minimum-incompatibility.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/1681.minimum-incompatibility.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/1690.stone-game-vii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/1690.stone-game-vii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/1691.maximum-height-by-stacking-cuboids.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/1691.maximum-height-by-stacking-cuboids.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/1696.jump-game-vi.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/1696.jump-game-vi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/174.dungeon-game.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/174.dungeon-game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/2167.minimum-time-to-remove-all-cars-containing-illegal-goods.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/2167.minimum-time-to-remove-all-cars-containing-illegal-goods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/22.generate-parentheses.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/22.generate-parentheses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/264.ugly-number-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/264.ugly-number-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/279.perfect-squares.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/279.perfect-squares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/292.nim-game.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/292.nim-game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/319.bulb-switcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/319.bulb-switcher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/32.longest-valid-parentheses.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/32.longest-valid-parentheses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/322.coin-change.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/322.coin-change.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/329.longest-increasing-path-in-a-matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/329.longest-increasing-path-in-a-matrix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/338.counting-bits.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/338.counting-bits.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/343.integer-break.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/343.integer-break.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/357.count-numbers-with-unique-digits.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/357.count-numbers-with-unique-digits.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/368.largest-divisible-subset.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/368.largest-divisible-subset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/376.wiggle-subsequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/376.wiggle-subsequence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/377.combination-sum-iv.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/377.combination-sum-iv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/392.is-subsequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/392.is-subsequence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/396.rotate-function.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/396.rotate-function.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/397.integer-replacement.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/397.integer-replacement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/410.split-array-largest-sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/410.split-array-largest-sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/413.arithmetic-slices.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/413.arithmetic-slices.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/416.partition-equal-subset-sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/416.partition-equal-subset-sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/435.non-overlapping-intervals.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/435.non-overlapping-intervals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/45.jump-game-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/45.jump-game-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/458.poor-pigs.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/458.poor-pigs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/473.matchsticks-to-square.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/473.matchsticks-to-square.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/474.ones-and-zeroes.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/474.ones-and-zeroes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/488.zuma-game.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/488.zuma-game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/494.target-sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/494.target-sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/5.longest-palindromic-substring.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/5.longest-palindromic-substring.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/509.fibonacci-number.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/509.fibonacci-number.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/514.freedom-trail.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/514.freedom-trail.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/516. Longest Palindromic Subsequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/516. Longest Palindromic Subsequence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/518.coin-change-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/518.coin-change-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/526.beautiful-arrangement.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/526.beautiful-arrangement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/53.maximum-subarray.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/53.maximum-subarray.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/542.01-matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/542.01-matrix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/55.jump-game.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/55.jump-game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/576.out-of-boundary-paths.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/576.out-of-boundary-paths.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/583.delete-operation-for-two-strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/583.delete-operation-for-two-strings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/62.unique-paths.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/62.unique-paths.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/63.unique-paths-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/63.unique-paths-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/638.shopping-offers.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/638.shopping-offers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/64.minimum-path-sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/64.minimum-path-sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/647.palindromic-substrings.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/647.palindromic-substrings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/70.climbing-stairs.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/70.climbing-stairs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/718.maximum-length-of-repeated-subarray.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/718.maximum-length-of-repeated-subarray.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/72.edit-distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/72.edit-distance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/746.min-cost-climbing-stairs.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/746.min-cost-climbing-stairs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/787.cheapest-flights-within-k-stops.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/787.cheapest-flights-within-k-stops.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/823.binary-trees-with-factors.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/823.binary-trees-with-factors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/828.count-unique-characters-of-all-substrings-of-a-given-string.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/828.count-unique-characters-of-all-substrings-of-a-given-string.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/834.sum-of-distances-in-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/834.sum-of-distances-in-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/838.push-dominoes.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/838.push-dominoes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/845.longest-mountain-in-array.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/845.longest-mountain-in-array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/877.stone-game.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/877.stone-game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/887.super-egg-drop.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/887.super-egg-drop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/898.bitwise-ors-of-subarrays.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/898.bitwise-ors-of-subarrays.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/907.sum-of-subarray-minimums.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/907.sum-of-subarray-minimums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/91.decode-ways.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/91.decode-ways.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/918.maximum-sum-circular-subarray.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/918.maximum-sum-circular-subarray.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/920.number-of-music-playlists.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/920.number-of-music-playlists.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/931.minimum-falling-path-sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/931.minimum-falling-path-sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/95.unique-binary-search-trees-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/95.unique-binary-search-trees-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/96.unique-binary-search-trees.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/96.unique-binary-search-trees.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/968.binary-tree-cameras.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/968.binary-tree-cameras.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/97.interleaving-string.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/97.interleaving-string.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/978.longest-turbulent-subarray.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/978.longest-turbulent-subarray.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/996.number-of-squareful-arrays.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/996.number-of-squareful-arrays.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/house-robber/198.house-robber.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/house-robber/198.house-robber.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/house-robber/213.house-robber-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/house-robber/213.house-robber-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/house-robber/337.house-robber-iii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/house-robber/337.house-robber-iii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic planning/dp-func/house-robber/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/dynamic planning/dp-func/house-robber/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/104.maximum-depth-of-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/104.maximum-depth-of-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/114.flatten-binary-tree-to-linked-list.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/114.flatten-binary-tree-to-linked-list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/116.populating-next-right-pointers-in-each-node.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/116.populating-next-right-pointers-in-each-node.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/144.binary-tree-preorder-traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/144.binary-tree-preorder-traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/226.invert-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/226.invert-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/297.serialize-and-deserialize-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/297.serialize-and-deserialize-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/543.diameter-of-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/543.diameter-of-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/652.find-duplicate-subtrees.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/652.find-duplicate-subtrees.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/654.maximum-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/654.maximum-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/binary-search-tree/1038.binary-search-tree-to-greater-sum-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/binary-search-tree/1038.binary-search-tree-to-greater-sum-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/binary-search-tree/230.kth-smallest-element-in-a-bst.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/binary-search-tree/230.kth-smallest-element-in-a-bst.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/binary-search-tree/450.delete-node-in-a-bst.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/binary-search-tree/450.delete-node-in-a-bst.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/binary-search-tree/538.convert-bst-to-greater-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/binary-search-tree/538.convert-bst-to-greater-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/binary-search-tree/700.search-in-a-binary-search-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/binary-search-tree/700.search-in-a-binary-search-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/binary-search-tree/701.insert-into-a-binary-search-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/binary-search-tree/701.insert-into-a-binary-search-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/binary-search-tree/95.unique-binary-search-trees-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/binary-search-tree/95.unique-binary-search-trees-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/binary-search-tree/96.unique-binary-search-trees.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/binary-search-tree/96.unique-binary-search-trees.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/binary-search-tree/98.validate-binary-search-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/binary-search-tree/98.validate-binary-search-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/construct-binarytree/105.construct-binary-tree-from-preorder-and-inorder-traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/construct-binarytree/105.construct-binary-tree-from-preorder-and-inorder-traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/construct-binarytree/106.construct-binary-tree-from-inorder-and-postorder-traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/construct-binarytree/106.construct-binary-tree-from-inorder-and-postorder-traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/construct-binarytree/889.construct-binary-tree-from-preorder-and-postorder-traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/construct-binarytree/889.construct-binary-tree-from-preorder-and-postorder-traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/list_to_binarytree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/list_to_binarytree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/merge-sort(postorder)/315.count-of-smaller-numbers-after-self.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/merge-sort(postorder)/315.count-of-smaller-numbers-after-self.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/merge-sort(postorder)/327.count-of-range-sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/merge-sort(postorder)/327.count-of-range-sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/merge-sort(postorder)/493.reverse-pairs.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/merge-sort(postorder)/493.reverse-pairs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/merge-sort(postorder)/912.sort-an-array.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/merge-sort(postorder)/912.sort-an-array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/quick-sort/215.kth-largest-element-in-an-array.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/quick-sort/215.kth-largest-element-in-an-array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/binary-tree/quick-sort/912.sort-an-array.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/quick-sort/912.sort-an-array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/100.same-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/100.same-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/101.symmetric-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/101.symmetric-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/102.binary-tree-level-order-traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/102.binary-tree-level-order-traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/1020.number-of-enclaves.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/1020.number-of-enclaves.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/103.binary-tree-zigzag-level-order-traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/103.binary-tree-zigzag-level-order-traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/1034.coloring-a-border.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/1034.coloring-a-border.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/104.maximum-depth-of-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/104.maximum-depth-of-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/107.binary-tree-level-order-traversal-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/107.binary-tree-level-order-traversal-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/1091.shortest-path-in-binary-matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/1091.shortest-path-in-binary-matrix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/111.minimum-depth-of-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/111.minimum-depth-of-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/112.path-sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/112.path-sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/1123.lowest-common-ancestor-of-deepest-leaves.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/1123.lowest-common-ancestor-of-deepest-leaves.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/116.populating-next-right-pointers-in-each-node.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/116.populating-next-right-pointers-in-each-node.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/1202.smallest-string-with-swaps.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/1202.smallest-string-with-swaps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/1203.sort-items-by-groups-respecting-dependencies.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/1203.sort-items-by-groups-respecting-dependencies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/126.word-ladder-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/126.word-ladder-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/127.word-ladder.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/127.word-ladder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/1293.shortest-path-in-a-grid-with-obstacles-elimination.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/1293.shortest-path-in-a-grid-with-obstacles-elimination.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/130.surrounded-regions.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/130.surrounded-regions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/1302.deepest-leaves-sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/1302.deepest-leaves-sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/1306.jump-game-iii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/1306.jump-game-iii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/1319.number-of-operations-to-make-network-connected.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/1319.number-of-operations-to-make-network-connected.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/1609.even-odd-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/1609.even-odd-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/1631.path-with-minimum-effort.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/1631.path-with-minimum-effort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/1654.minimum-jumps-to-reach-home.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/1654.minimum-jumps-to-reach-home.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/199.binary-tree-right-side-view.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/199.binary-tree-right-side-view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/200.number-of-islands.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/200.number-of-islands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/207.course-schedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/207.course-schedule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/210.course-schedule-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/210.course-schedule-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/226.invert-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/226.invert-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/279.perfect-squares.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/279.perfect-squares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/297.serialize-and-deserialize-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/297.serialize-and-deserialize-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/301.remove-invalid-parentheses.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/301.remove-invalid-parentheses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/322.coin-change.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/322.coin-change.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/329.longest-increasing-path-in-a-matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/329.longest-increasing-path-in-a-matrix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/399.evaluate-division.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/399.evaluate-division.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/404.sum-of-left-leaves.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/404.sum-of-left-leaves.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/417.pacific-atlantic-water-flow.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/417.pacific-atlantic-water-flow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/429.n-ary-tree-level-order-traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/429.n-ary-tree-level-order-traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/433.minimum-genetic-mutation.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/433.minimum-genetic-mutation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/463.island-perimeter.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/463.island-perimeter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/488.island-perimeter.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/488.island-perimeter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/513.find-bottom-left-tree-value.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/513.find-bottom-left-tree-value.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/515.find-largest-value-in-each-tree-row.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/515.find-largest-value-in-each-tree-row.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/529.minesweeper.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/529.minesweeper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/530.minimum-absolute-difference-in-bst.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/530.minimum-absolute-difference-in-bst.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/542.01-matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/542.01-matrix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/547.number-of-provinces.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/547.number-of-provinces.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/559.maximum-depth-of-n-ary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/559.maximum-depth-of-n-ary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/617.merge-two-binary-trees.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/617.merge-two-binary-trees.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/623.add-one-row-to-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/623.add-one-row-to-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/637.average-of-levels-in-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/637.average-of-levels-in-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/653.two-sum-iv-input-is-a-bst.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/653.two-sum-iv-input-is-a-bst.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/662.maximum-width-of-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/662.maximum-width-of-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/684.redundant-connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/684.redundant-connection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/685.redundant-connection-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/685.redundant-connection-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/690.employee-importance.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/690.employee-importance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/721.accounts-merge.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/721.accounts-merge.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/733.flood-fill.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/733.flood-fill.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/752.open-the-lock.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/752.open-the-lock.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/756.pyramid-transition-matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/756.pyramid-transition-matrix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/765.couples-holding-hands.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/765.couples-holding-hands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/778.swim-in-rising-water.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/778.swim-in-rising-water.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/783.minimum-distance-between-bst-nodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/783.minimum-distance-between-bst-nodes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/785.is-graph-bipartite.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/785.is-graph-bipartite.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/802.find-eventual-safe-states.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/802.find-eventual-safe-states.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/815.bus-routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/815.bus-routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/839.similar-string-groups.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/839.similar-string-groups.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/841.keys-and-rooms.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/841.keys-and-rooms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/863.all-nodes-distance-k-in-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/863.all-nodes-distance-k-in-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/864.shortest-path-to-get-all-keys.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/864.shortest-path-to-get-all-keys.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/909.snakes-and-ladders.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/909.snakes-and-ladders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/924.minimize-malware-spread.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/924.minimize-malware-spread.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/928.minimize-malware-spread-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/928.minimize-malware-spread-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/958.check-completeness-of-a-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/958.check-completeness-of-a-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/959.regions-cut-by-slashes.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/959.regions-cut-by-slashes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/987.vertical-order-traversal-of-a-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/987.vertical-order-traversal-of-a-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/BFS/993.cousins-in-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/BFS/993.cousins-in-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/100.same-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/100.same-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/101.symmetric-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/101.symmetric-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/1020.number-of-enclaves.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/1020.number-of-enclaves.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/1026.maximum-difference-between-node-and-ancestor.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/1026.maximum-difference-between-node-and-ancestor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/1028.recover-a-tree-from-preorder-traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/1028.recover-a-tree-from-preorder-traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/1034.coloring-a-border.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/1034.coloring-a-border.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/1038.binary-search-tree-to-greater-sum-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/1038.binary-search-tree-to-greater-sum-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/104.maximum-depth-of-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/104.maximum-depth-of-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/110.balanced-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/110.balanced-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/111.minimum-depth-of-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/111.minimum-depth-of-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/1110.delete-nodes-and-return-forest.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/1110.delete-nodes-and-return-forest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/112.path-sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/112.path-sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/1123.lowest-common-ancestor-of-deepest-leaves.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/1123.lowest-common-ancestor-of-deepest-leaves.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/113.path-sum-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/113.path-sum-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/114.flatten-binary-tree-to-linked-list.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/114.flatten-binary-tree-to-linked-list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/1145.binary-tree-coloring-game.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/1145.binary-tree-coloring-game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/116.populating-next-right-pointers-in-each-node.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/116.populating-next-right-pointers-in-each-node.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/1202.smallest-string-with-swaps.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/1202.smallest-string-with-swaps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/1203.sort-items-by-groups-respecting-dependencies.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/1203.sort-items-by-groups-respecting-dependencies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/124.binary-tree-maximum-path-sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/124.binary-tree-maximum-path-sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/129.sum-root-to-leaf-numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/129.sum-root-to-leaf-numbers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/130.surrounded-regions.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/130.surrounded-regions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/1302.deepest-leaves-sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/1302.deepest-leaves-sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/1305.all-elements-in-two-binary-search-trees.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/1305.all-elements-in-two-binary-search-trees.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/1306.jump-game-iii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/1306.jump-game-iii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/1319.number-of-operations-to-make-network-connected.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/1319.number-of-operations-to-make-network-connected.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/144.binary-tree-preorder-traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/144.binary-tree-preorder-traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/145.binary-tree-postorder-traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/145.binary-tree-postorder-traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/1600.throne-inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/1600.throne-inheritance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/1631path-with-minimum-effort.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/1631path-with-minimum-effort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/199.binary-tree-right-side-view.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/199.binary-tree-right-side-view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/200.number-of-islands.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/200.number-of-islands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/207.course-schedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/207.course-schedule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/2096.step-by-step-directions-from-a-binary-tree-node-to-another.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/2096.step-by-step-directions-from-a-binary-tree-node-to-another.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/210.course-schedule-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/210.course-schedule-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/211.design-add-and-search-words-data-structure.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/211.design-add-and-search-words-data-structure.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/222.count-complete-tree-nodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/222.count-complete-tree-nodes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/226.invert-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/226.invert-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/230.kth-smallest-element-in-a-bst.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/230.kth-smallest-element-in-a-bst.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/235.lowest-common-ancestor-of-a-binary-search-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/235.lowest-common-ancestor-of-a-binary-search-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/236.lowest-common-ancestor-of-a-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/236.lowest-common-ancestor-of-a-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/257.binary-tree-paths.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/257.binary-tree-paths.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/297.serialize-and-deserialize-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/297.serialize-and-deserialize-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/329.longest-increasing-path-in-a-matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/329.longest-increasing-path-in-a-matrix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/341.flatten-nested-list-iterator.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/341.flatten-nested-list-iterator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/385.mini-parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/385.mini-parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/386.lexicographical-numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/386.lexicographical-numbers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/399.evaluate-division.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/399.evaluate-division.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/404.sum-of-left-leaves.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/404.sum-of-left-leaves.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/417.pacific-atlantic-water-flow.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/417.pacific-atlantic-water-flow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/419.battleships-in-a-board.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/419.battleships-in-a-board.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/437.path-sum-iii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/437.path-sum-iii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/463.island-perimeter.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/463.island-perimeter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/508.most-frequent-subtree-sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/508.most-frequent-subtree-sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/513.find-bottom-left-tree-value.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/513.find-bottom-left-tree-value.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/515.find-largest-value-in-each-tree-row.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/515.find-largest-value-in-each-tree-row.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/529.minesweeper.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/529.minesweeper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/530.minimum-absolute-difference-in-bst.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/530.minimum-absolute-difference-in-bst.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/538.convert-bst-to-greater-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/538.convert-bst-to-greater-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/543.diameter-of-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/543.diameter-of-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/547.diameter-of-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/547.diameter-of-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/559.maximum-depth-of-n-ary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/559.maximum-depth-of-n-ary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/563.binary-tree-tilt.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/563.binary-tree-tilt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/572.subtree-of-another-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/572.subtree-of-another-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/589.n-ary-tree-preorder-traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/589.n-ary-tree-preorder-traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/617.merge-two-binary-trees.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/617.merge-two-binary-trees.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/623.add-one-row-to-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/623.add-one-row-to-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/637.average-of-levels-in-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/637.average-of-levels-in-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/653.two-sum-iv-input-is-a-bst.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/653.two-sum-iv-input-is-a-bst.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/662.maximum-width-of-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/662.maximum-width-of-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/669.trim-a-binary-search-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/669.trim-a-binary-search-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/684.redundant-connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/684.redundant-connection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/685.redundant-connection-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/685.redundant-connection-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/690.employee-importance.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/690.employee-importance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/721.accounts-merge.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/721.accounts-merge.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/733.flood-fill.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/733.flood-fill.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/753.cracking-the-safe.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/753.cracking-the-safe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/756.pyramid-transition-matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/756.pyramid-transition-matrix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/765.couples-holding-hands.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/765.couples-holding-hands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/778.swim-in-rising-water.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/778.swim-in-rising-water.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/783.minimum-distance-between-bst-nodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/783.minimum-distance-between-bst-nodes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/785.is-graph-bipartite.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/785.is-graph-bipartite.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/802.find-eventual-safe-states.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/802.find-eventual-safe-states.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/834.sum-of-distances-in-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/834.sum-of-distances-in-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/839.similar-string-groups.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/839.similar-string-groups.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/841.keys-and-rooms.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/841.keys-and-rooms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/851.loud-and-rich.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/851.loud-and-rich.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/863.all-nodes-distance-k-in-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/863.all-nodes-distance-k-in-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/872.leaf-similar-trees.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/872.leaf-similar-trees.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/897.increasing-order-search-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/897.increasing-order-search-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/924.minimize-malware-spread.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/924.minimize-malware-spread.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/928.minimize-malware-spread-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/928.minimize-malware-spread-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/938.range-sum-of-bst.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/938.range-sum-of-bst.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/94.binary-tree-inorder-traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/94.binary-tree-inorder-traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/947.most-stones-removed-with-same-row-or-column.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/947.most-stones-removed-with-same-row-or-column.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/959.regions-cut-by-slashes.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/959.regions-cut-by-slashes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/968.binary-tree-cameras.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/968.binary-tree-cameras.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/971.flip-binary-tree-to-match-preorder-traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/971.flip-binary-tree-to-match-preorder-traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/979.distribute-coins-in-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/979.distribute-coins-in-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/98.validate-binary-search-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/98.validate-binary-search-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/987.vertical-order-traversal-of-a-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/987.vertical-order-traversal-of-a-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/99.recover-binary-search-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/99.recover-binary-search-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/DFS/993.cousins-in-binary-tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/DFS/993.cousins-in-binary-tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/113.path-sum-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/113.path-sum-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/1239.maximum-length-of-a-concatenated-string-with-unique-characters.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/1239.maximum-length-of-a-concatenated-string-with-unique-characters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/126.word-ladder-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/126.word-ladder-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/131.palindrome-partitioning.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/131.palindrome-partitioning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/1655.distribute-repeating-integers.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/1655.distribute-repeating-integers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/17.letter-combinations-of-a-phone-number.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/17.letter-combinations-of-a-phone-number.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/211.design-add-and-search-words-data-structure.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/211.design-add-and-search-words-data-structure.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/212.word-search-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/212.word-search-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/216.combination-sum-iii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/216.combination-sum-iii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/22. 括号生成.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/22. 括号生成.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/257.binary-tree-paths.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/257.binary-tree-paths.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/301.remove-invalid-parentheses.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/301.remove-invalid-parentheses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/306.additive-number.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/306.additive-number.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/357.count-numbers-with-unique-digits.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/357.count-numbers-with-unique-digits.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/37.sudoku-solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/37.sudoku-solver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/401.binary-watch.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/401.binary-watch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/473.matchsticks-to-square.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/473.matchsticks-to-square.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/491.non-decreasing-subsequences.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/491.non-decreasing-subsequences.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/494.target-sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/494.target-sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/51.n-queens.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/51.n-queens.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/52.n-queens-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/52.n-queens-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/526.beautiful-arrangement.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/638.shopping-offers.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/638.shopping-offers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/784.letter-case-permutation.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/784.letter-case-permutation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/79.word-search.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/79.word-search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/816.ambiguous-coordinates.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/816.ambiguous-coordinates.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/842.split-array-into-fibonacci-sequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/842.split-array-into-fibonacci-sequence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/89.gray-code.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/89.gray-code.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/93.restore-ip-addresses.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/93.restore-ip-addresses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/95.unique-binary-search-trees-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/95.unique-binary-search-trees-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/980.unique-paths-iii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/980.unique-paths-iii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/996.number-of-squareful-arrays.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/996.number-of-squareful-arrays.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/permutation + combination/1079.letter-tile-possibilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/permutation + combination/1079.letter-tile-possibilities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/template" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/排列-permutation/46. 全排列permutations.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/46. 全排列permutations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/排列-permutation/47. 全排列 IIpermutations-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/47. 全排列 IIpermutations-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/排列-permutation/526.beautiful-arrangement.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/526.beautiful-arrangement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/排列-permutation/60.permutation-sequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/60.permutation-sequence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/排列-permutation/996.number-of-squareful-arrays.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/996.number-of-squareful-arrays.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/组合(子集)-combination/216.combination-sum-iii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination/216.combination-sum-iii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/组合(子集)-combination/39. 组合总和combination-sum_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination/39. 组合总和combination-sum_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/组合(子集)-combination/40. 组合总和 IIcombination-sum-ii（先排序+相同元素仅处理一次：保证去重）.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination/40. 组合总和 IIcombination-sum-ii（先排序+相同元素仅处理一次：保证去重）.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/组合(子集)-combination/698.partition-to-k-equal-sum-subsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination/698.partition-to-k-equal-sum-subsets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/组合(子集)-combination/77. 组合combinations.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination/77. 组合combinations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/组合(子集)-combination/78. 子集subsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination/78. 子集subsets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/backtracking/组合(子集)-combination/90. (note)子集 IIsubsets-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination/90. (note)子集 IIsubsets-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/islands problems/1020.number-of-enclaves.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/islands problems/1020.number-of-enclaves.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/islands problems/1254.number-of-closed-islands.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/islands problems/1254.number-of-closed-islands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/islands problems/1905.count-sub-islands.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/islands problems/1905.count-sub-islands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/islands problems/200.number-of-islands.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/islands problems/200.number-of-islands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/violence search/islands problems/695.max-area-of-island.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/islands problems/695.max-area-of-island.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/调度算法-页面置换算法：LRU，LFU/lfu-README.md" beforeDir="false" afterPath="$PROJECT_DIR$/调度算法-页面置换算法：LRU，LFU/lfu-README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/调度算法-页面置换算法：LRU，LFU/lru-README.md" beforeDir="false" afterPath="$PROJECT_DIR$/调度算法-页面置换算法：LRU，LFU/lru-README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/贪心/1024.video-stitching.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/贪心/1024.video-stitching.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/贪心/435.non-overlapping-intervals.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/贪心/435.non-overlapping-intervals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/贪心/45.jump-game-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/贪心/45.jump-game-ii.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/贪心/452.minimum-number-of-arrows-to-burst-balloons.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/贪心/452.minimum-number-of-arrows-to-burst-balloons.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/贪心/55.jump-game.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/贪心/55.jump-game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/贪心/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/贪心/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/贪心/区间/1288.remove-covered-intervals.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/贪心/区间/1288.remove-covered-intervals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/贪心/区间/56.merge-intervals.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/贪心/区间/56.merge-intervals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/贪心/区间/986.interval-list-intersections.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/贪心/区间/986.interval-list-intersections.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/贪心/区间/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/贪心/区间/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive/violence search/calculator/224.basic-calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/calculator/224.basic-calculator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive/violence search/calculator/227.basic-calculator-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/calculator/227.basic-calculator-ii.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -451,7 +62,28 @@
       <recent name="C:\Users\xinto\gitrepo\break-algorithm\violence search\backtracking" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.526.beautiful-arrangement">
+  <component name="RunManager" selected="Python.227.basic-calculator-ii">
+    <configuration name="227.basic-calculator-ii" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="break-algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/recursive/violence search/calculator" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recursive/violence search/calculator/227.basic-calculator-ii.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="23. Merge k Sorted Lists" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="break-algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -515,27 +147,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="5. 最长回文子串longest-palindromic-substring" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="break-algorithm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/double-pointer/left-right/[center-to-outer]" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/double-pointer/left-right/[center-to-outer]/5. 最长回文子串longest-palindromic-substring.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="94.binary-tree-inorder-traversal" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="break-algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -559,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.227.basic-calculator-ii" />
         <item itemvalue="Python.526.beautiful-arrangement" />
         <item itemvalue="Python.23. Merge k Sorted Lists" />
         <item itemvalue="Python.94.binary-tree-inorder-traversal" />
         <item itemvalue="Python.53.maximum-subarray" />
-        <item itemvalue="Python.5. 最长回文子串longest-palindromic-substring" />
       </list>
     </recent_temporary>
   </component>
@@ -688,7 +299,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679984352531</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="tree">
+      <created>1680071826123</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1680071826123</updated>
+    </task>
+    <task id="LOCAL-00018" summary="tree">
+      <created>1680071844002</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1680071844002</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -763,6 +388,31 @@
           <url>file://$PROJECT_DIR$/zip/14.longest-common-prefix.py</url>
           <line>12</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/recursive/violence search/calculator/227.basic-calculator-ii.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/recursive/violence search/calculator/227.basic-calculator-ii.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/recursive/violence search/calculator/227.basic-calculator-ii.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/recursive/violence search/calculator/227.basic-calculator-ii.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/recursive/violence search/calculator/227.basic-calculator-ii.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
