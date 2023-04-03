@@ -59,12 +59,13 @@ class Solution:
         res_nodup_list = [list(i) for i in res_nodup_tuple]
         return res_nodup_list
 
-    def permuteUnique_wrong2(self, nums: List[int]) -> List[List[int]]:
+    def permuteUnique2(self, nums: List[int]) -> List[List[int]]:
+        # 2. 先排序
+        nums.sort()
+
         res = []
         track = []
         used = [False for i in range(len(nums))]
-
-        nums.sort()
 
         def backtrack(used: List[bool]) -> None:
             if len(track) == len(nums):
@@ -72,12 +73,11 @@ class Solution:
                 return
 
             for i in range(len(nums)):
-                # if i > 0 and nums[i] == nums[i - 1] and not used[i-1]: continue
-                # if i > 0 and nums[i] == nums[i - 1] and used[i-1]: continue
-
                 if used[i]: continue
-                if i > 0 and nums[i] == nums[i - 1] and not used[i - 1]: continue
-                # if i > 0 and nums[i] == nums[i - 1] and used[i-1]: continue
+                # 2. 忽略重复字符，对于重复字符仅进行一次计算，used 与 not used 均可
+                # 同时注意i需大于0
+                # if i > 0 and nums[i] == nums[i - 1] and not used[i - 1]: continue
+                if i > 0 and nums[i] == nums[i - 1] and used[i - 1]: continue
 
                 used[i] = True
                 track.append(nums[i])
@@ -116,31 +116,34 @@ def backtrack(self, sol, nums, check):
 
 
 def main():
-    # Input: nums = [1,1,2]
-    # Output:
-    # [[1,1,2],
-    #  [1,2,1],
-    #  [2,1,1]]
-    solution1 = Solution()
-    print(solution1.permuteUnique(nums=[1, 1, 2]))
-
-    # Input: nums = [1,2,3]
-    # Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
-    solution2 = Solution()
-    print(solution2.permuteUnique(nums=[1, 2, 3]))
-
-    # Input:
-    # [2,2,1,1]
-    # Output:
-    # [[1,2,1,2],[1,2,2,1],[2,2,1,1],[2,1,1,2],[1,1,2,2]]
-    # Expected:
-    # [[1,1,2,2],[1,2,1,2],[1,2,2,1],[2,1,1,2],[2,1,2,1],[2,2,1,1]]
+    # # Input: nums = [1,1,2]
+    # # Output:
+    # # [[1,1,2],
+    # #  [1,2,1],
+    # #  [2,1,1]]
+    # solution1 = Solution()
+    # print(solution1.permuteUnique(nums=[1, 1, 2]))
+    # print(solution1.permuteUnique2(nums=[1, 1, 2]))
+    #
+    # # Input: nums = [1,2,3]
+    # # Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
+    # solution2 = Solution()
+    # print(solution2.permuteUnique(nums=[1, 2, 3]))
+    # print(solution2.permuteUnique2(nums=[1, 2, 3]))
+    #
+    # # Input:
+    # # [2,2,1,1]
+    # # Output:
+    # # [[1,2,1,2],[1,2,2,1],[2,2,1,1],[2,1,1,2],[1,1,2,2]]
+    # # Expected:
+    # # [[1,1,2,2],[1,2,1,2],[1,2,2,1],[2,1,1,2],[2,1,2,1],[2,2,1,1]]
     solution3 = Solution()
-    print(solution3.permuteUnique([2, 2, 1, 1]))
-    # print(solution3.permuteUnique_wrong1([2, 2, 1, 1]))
-    # print(solution3.permuteUnique_wrong2([2, 2, 1, 1]))
-
-    print(solution3.permuteUnique([2, 2, 2]))
+    # print(solution3.permuteUnique([2, 2, 1, 1]))
+    # # print(solution3.permuteUnique_wrong1([2, 2, 1, 1]))
+    # print(solution3.permuteUnique2([2, 2, 1, 1]))
+    #
+    # print(solution3.permuteUnique([2, 2, 2]))
+    print(solution3.permuteUnique2([2, 2, 2]))
 
 
 if __name__ == '__main__':

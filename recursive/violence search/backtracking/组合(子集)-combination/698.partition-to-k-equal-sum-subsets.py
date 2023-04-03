@@ -8,13 +8,11 @@ from typing import List
 
 class Solution:
     def canPartitionKSubsets(self, nums: List[int], k: int) -> bool:
+        s = sum(nums)
+        if s % k != 0 or k > len(nums): return False
+        target = s // k
 
-        sum = 0
-        for p in range(len(nums)): sum += nums[p]
-        if sum % k != 0 or k > len(nums): return False
-        target = sum / k
-
-        buckets = [0 for p in range(k)]
+        buckets = [0 for i in range(k)]
 
         def backtrack(i: int, buckets: List) -> bool:
             # 1.递归出口：指针变量i遍历到len(nums)，
@@ -32,13 +30,13 @@ class Solution:
                     continue
                 elif buckets[j] + nums[i] <= target:
                     buckets[j] += nums[i]
-                # 2.2 递归：将遍历nums这一过程打入递归
-                # NOTE:递归部分需要有返回值，否则该递归调用结果没有返回值，递归调用结果被舍弃，默认将None赋给res
-                if backtrack(i + 1, buckets): return True
-                # 2.3 递归后撤销选择
-                buckets[j] -= nums[i]
-                # NOTE：nums[i]装入哪个桶都不行
-                return False
+                    # 2.2 递归：将遍历nums这一过程打入递归
+                    # NOTE:递归部分需要有返回值，否则该递归调用结果没有返回值，递归调用结果被舍弃，默认将None赋给res
+                    if backtrack(i + 1, buckets): return True
+                    # 2.3 递归后撤销选择
+                    buckets[j] -= nums[i]
+                    # NOTE：nums[i]装入哪个桶都不行
+                    return False
 
         return backtrack(0, buckets)
 
@@ -59,7 +57,8 @@ def main():
     # sum=28668  /  4 = 7167
     # Output: false
     solution3 = Solution()
-    print(solution3.canPartitionKSubsets(nums=[730,580,401,659,5524,405,1601,3,383,4391,4485,1024,1175,1100,2299,3908], k=4))
+    print(solution3.canPartitionKSubsets(
+        nums=[730, 580, 401, 659, 5524, 405, 1601, 3, 383, 4391, 4485, 1024, 1175, 1100, 2299, 3908], k=4))
 
 
 if __name__ == '__main__':

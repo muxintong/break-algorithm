@@ -28,6 +28,7 @@ class Solution:
 
             for i in range(start, len(candidates), 1):
                 # 去重保证：2.排序后，针对相同元素仅处理一次
+                # 同时注意i需大于start
                 if i > start and candidates[i] == candidates[i - 1]:
                     continue
                 # 2.1 选择判断：是否符合题意
@@ -39,12 +40,12 @@ class Solution:
                     track_sum += candidates[i]
                     track.append(candidates[i])
 
-                # 2.2 递归
-                backtrack(i + 1, track_sum)
+                    # 2.2 递归
+                    backtrack(i + 1, track_sum)
 
-                # 2.3 递归后撤销符合题意的选择
-                track.remove(candidates[i])
-                track_sum -= candidates[i]
+                    # 2.3 递归后撤销符合题意的选择
+                    track.remove(candidates[i])
+                    track_sum -= candidates[i]
 
         backtrack(start, track_sum)
         return res
@@ -68,14 +69,14 @@ class Solution:
                 if track_sum + candidates[i] > target:
                     continue
                 # 若符合:做选择
-                else:
+                elif track_sum + candidates[i] <= target:
                     track.append(candidates[i])
                     track_sum += candidates[i]
-                # 2.2 递归
-                backtrack(i + 1, track_sum)
-                # 2.3 递归后撤销选择
-                track.remove(candidates[i])
-                track_sum -= candidates[i]
+                    # 2.2 递归
+                    backtrack(i + 1, track_sum)
+                    # 2.3 递归后撤销选择
+                    track.remove(candidates[i])
+                    track_sum -= candidates[i]
 
         backtrack(start, track_sum)
         # 针对res去重

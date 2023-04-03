@@ -12,16 +12,20 @@ class Solution:
                 res.append(track.copy())
 
             for i in range(1, n + 1):
-                if used[i]: continue
-                used[i] = True
-                track.append(i)
+                if used[i]:
+                    continue
 
-                backtrack(used)
+                elif not used[i]:
+                    used[i] = True
+                    track.append(i)
 
-                track.remove(i)
-                used[i] = False
+                    backtrack(used)
+
+                    track.remove(i)
+                    used[i] = False
 
         backtrack(used)
+
         s = ''
         for j in res[k - 1]:
             s = s + str(j)

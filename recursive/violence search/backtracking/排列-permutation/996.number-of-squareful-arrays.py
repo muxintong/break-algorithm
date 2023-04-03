@@ -45,20 +45,25 @@ class Solution:
     """
 
     def numSquarefulPerms(self, nums: List[int]) -> int:
+        # 对于可重元素处于方法：
+        # 1. 先排序
         nums.sort()
+
         perms = []
-
         track = []
-
         used = [False for i in range(len(nums))]
 
         def backtrack(used: List[bool]) -> None:
             if len(track) == len(nums):
                 perms.append(track.copy())
+                return
 
             for i in range(len(nums)):
                 if used[i]: continue
-                if i > 0 and nums[i] == nums[i - 1] and nums[i - 1] == False: continue
+                # 2. 对于重复元素进行处理时，保证重复元素仅处理一次
+                if i > 0 and nums[i] == nums[i - 1] and used[i - 1]: continue
+                # if i > 0 and nums[i] == nums[i - 1] and not used[i - 1]: continue
+                # if i > 0 and nums[i] == nums[i - 1]: continue
 
                 used[i] = True
                 track.append(nums[i])

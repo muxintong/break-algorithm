@@ -33,11 +33,11 @@ class Solution:
                     track_sum += candidates[i]
                     track.append(candidates[i])
 
-                # keypoint：若元素可重复使用，则递归调用仍从i开始。
-                backtrack(i, track_sum)
+                    # keypoint：若元素可重复使用，则递归调用仍从i开始。
+                    backtrack(i, track_sum)
 
-                track_sum -= candidates[i]
-                track.remove(candidates[i])
+                    track_sum -= candidates[i]
+                    track.remove(candidates[i])
 
         backtrack(start, track_sum)
         return res

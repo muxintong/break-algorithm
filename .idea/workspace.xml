@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49548cc4-5df9-4379-9a5f-d0f8ea12d176" name="Changes" comment="tree">
+      <change afterPath="$PROJECT_DIR$/括号类问题/判断-stack/20.valid-parentheses.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/括号类问题/生成-backtrack/22.generate-parentheses.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursive/violence search/calculator/224.basic-calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/calculator/224.basic-calculator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursive/violence search/calculator/227.basic-calculator-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/calculator/227.basic-calculator-ii.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive/violence search/backtracking/22. 括号生成.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/22. 括号生成.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/46. 全排列permutations.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/46. 全排列permutations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/47. 全排列 IIpermutations-ii.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/47. 全排列 IIpermutations-ii.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/526.beautiful-arrangement.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/526.beautiful-arrangement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/60.permutation-sequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/60.permutation-sequence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/996.number-of-squareful-arrays.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/996.number-of-squareful-arrays.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination/39. 组合总和combination-sum_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination/39. 组合总和combination-sum_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination/40. 组合总和 IIcombination-sum-ii（先排序+相同元素仅处理一次：保证去重）.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination/40. 组合总和 IIcombination-sum-ii（先排序+相同元素仅处理一次：保证去重）.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination/698.partition-to-k-equal-sum-subsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination/698.partition-to-k-equal-sum-subsets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/括号类问题/判断-stack/20..py" beforeDir="false" afterPath="$PROJECT_DIR$/括号类问题/插入/1541.minimum-insertions-to-balance-a-parentheses-string.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/括号类问题/插入/1541..py" beforeDir="false" afterPath="$PROJECT_DIR$/括号类问题/插入/921.minimum-add-to-make-parentheses-valid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/括号类问题/插入/921..py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/括号类问题/生成-backtrack/22..py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +75,8 @@
       <recent name="C:\Users\xinto\gitrepo\break-algorithm\violence search\backtracking" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.227.basic-calculator-ii">
-    <configuration name="227.basic-calculator-ii" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.526.beautiful-arrangement">
+    <configuration name="39. 组合总和combination-sum_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="break-algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -71,11 +84,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/recursive/violence search/calculator" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recursive/violence search/calculator/227.basic-calculator-ii.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination/39. 组合总和combination-sum_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -84,7 +97,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="23. Merge k Sorted Lists" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="40. 组合总和 IIcombination-sum-ii（先排序+相同元素仅处理一次：保证去重）" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="break-algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,11 +105,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/double-pointer/linked-list" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\xinto\gitrepo\break-algorithm\double-pointer\linked-list\23. Merge k Sorted Lists.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination/40. 组合总和 IIcombination-sum-ii（先排序+相同元素仅处理一次：保证去重）.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="47. 全排列 IIpermutations-ii" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="break-algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/47. 全排列 IIpermutations-ii.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -113,11 +147,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/violence search/backtracking" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/violence search/backtracking/526.beautiful-arrangement.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/526.beautiful-arrangement.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,7 +160,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="53.maximum-subarray" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="698.partition-to-k-equal-sum-subsets" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="break-algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -134,32 +168,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dynamic planning/dp-func" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dynamic planning/dp-func/53.maximum-subarray.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="94.binary-tree-inorder-traversal" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="break-algorithm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/violence search/DFS" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/violence search/DFS/94.binary-tree-inorder-traversal.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination/698.partition-to-k-equal-sum-subsets.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.227.basic-calculator-ii" />
         <item itemvalue="Python.526.beautiful-arrangement" />
-        <item itemvalue="Python.23. Merge k Sorted Lists" />
-        <item itemvalue="Python.94.binary-tree-inorder-traversal" />
-        <item itemvalue="Python.53.maximum-subarray" />
+        <item itemvalue="Python.39. 组合总和combination-sum_1" />
+        <item itemvalue="Python.40. 组合总和 IIcombination-sum-ii（先排序+相同元素仅处理一次：保证去重）" />
+        <item itemvalue="Python.698.partition-to-k-equal-sum-subsets" />
+        <item itemvalue="Python.47. 全排列 IIpermutations-ii" />
       </list>
     </recent_temporary>
   </component>
@@ -313,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680071844002</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="tree">
+      <created>1680140989883</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1680140989883</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -413,6 +433,31 @@
           <url>file://$PROJECT_DIR$/recursive/violence search/calculator/227.basic-calculator-ii.py</url>
           <line>32</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/括号类问题/判断-stack/20.valid-parentheses.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/括号类问题/插入/921.minimum-add-to-make-parentheses-valid.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/括号类问题/插入/921.minimum-add-to-make-parentheses-valid.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/括号类问题/插入/921.minimum-add-to-make-parentheses-valid.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/括号类问题/生成-backtrack/22.generate-parentheses.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

@@ -27,18 +27,19 @@ class Solution:
 
             for i in range(len(nums)):
                 # 1.1 针对不符合题意的选择i：跳过该选择，进行下一次循环判断
-                if used[i]: continue
-                # 1.2 针对符合题意的选择i：加入存储 符合题意的选择 的路径列表tarck ，并将i标记为已经被使用过。
-                track.append(nums[i])
-                used[i] = True
+                if used[i]:
+                    continue
+                elif not used[i]:
+                    # 1.2 针对符合题意的选择i：加入存储 符合题意的选择 的路径列表tarck ，并将i标记为已经被使用过。
+                    track.append(nums[i])
+                    used[i] = True
 
+                    # 2. core：recursive
+                    backtrack(used)
 
-                # 2. core：recursive
-                backtrack(used)
-
-                # 3.递归之后撤销选择，还原该决策树：路径列表中移出nums[i]这一选择，并将i标记为未被使用。
-                track.remove(nums[i])
-                used[i] = False
+                    # 3.递归之后撤销选择，还原该决策树：路径列表中移出nums[i]这一选择，并将i标记为未被使用。
+                    track.remove(nums[i])
+                    used[i] = False
 
         backtrack(used)
         return res
