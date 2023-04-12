@@ -32,18 +32,36 @@ class TreeNode:
         self.right = right
 
 
+def list_to_binaryTree(arr: list) -> TreeNode:
+    if not arr: return None
+    dummy = TreeNode(-1)
+    p = dummy
+    for num in arr:
+        p = TreeNode(num)
+        p.
+
+
 class Solution:
     def mergeTrees(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> Optional[TreeNode]:
-        if root1 is None: return root2
-        if root2 is None: return root1
+        if not root1: return root2
+        if not root2: return root1
 
-        # 注意: 合并过程必须从两个树的根节点开始。
-        # preorder:
+        # 注意: 合并过程必须从两个树的根节点开始。=> preorder
         root1.val += root2.val
         root1.left = self.mergeTrees(root1.left, root2.left)
         root1.right = self.mergeTrees(root1.right, root2.right)
 
         return root1
+
+    def mergeTrees2(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> Optional[TreeNode]:
+        if not root1: return root2
+        if not root2: return root1
+
+        root = TreeNode(root1.val + root2.val)
+        root.left = self.mergeTrees(root1.left, root2.left)
+        root.right = self.mergeTrees(root1.right, root2.right)
+
+        return root
 
 
 def main():

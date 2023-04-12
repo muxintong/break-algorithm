@@ -3,12 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="49548cc4-5df9-4379-9a5f-d0f8ea12d176" name="Changes" comment="tree">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursive/tree/binary-tree/merge-sort(postorder)/315.count-of-smaller-numbers-after-self.py" beforeDir="false" afterPath="$PROJECT_DIR$/sort/merge-sort(postorder)/315.count-of-smaller-numbers-after-self.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursive/tree/binary-tree/merge-sort(postorder)/327.count-of-range-sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/sort/merge-sort(postorder)/327.count-of-range-sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursive/tree/binary-tree/merge-sort(postorder)/493.reverse-pairs.py" beforeDir="false" afterPath="$PROJECT_DIR$/sort/merge-sort(postorder)/493.reverse-pairs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursive/tree/binary-tree/merge-sort(postorder)/912.sort-an-array.py" beforeDir="false" afterPath="$PROJECT_DIR$/sort/merge-sort(postorder)/912.sort-an-array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursive/tree/binary-tree/quick-sort/215.kth-largest-element-in-an-array.py" beforeDir="false" afterPath="$PROJECT_DIR$/sort/quick-sort/215.kth-largest-element-in-an-array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursive/tree/binary-tree/quick-sort/912.sort-an-array.py" beforeDir="false" afterPath="$PROJECT_DIR$/sort/quick-sort/912.sort-an-array.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive/tree/binary-tree/617.merge-two-binary-trees.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/617.merge-two-binary-trees.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/60.permutation-sequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/60.permutation-sequence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/996.number-of-squareful-arrays.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/996.number-of-squareful-arrays.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive/贪心/区间/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/贪心/区间/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/括号类问题/判断-stack/20.valid-parentheses.py" beforeDir="false" afterPath="$PROJECT_DIR$/括号类问题/判断-stack/20.valid-parentheses.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/调度算法-页面置换算法：LRU，LFU/lru-README.md" beforeDir="false" afterPath="$PROJECT_DIR$/调度算法-页面置换算法：LRU，LFU/lru-README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,15 +44,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/xinto/gitrepo/break-algorithm/dynamic planning/dp-func",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/xinto/gitrepo/break-algorithm/dynamic planning/dp-func&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\xinto\gitrepo\break-algorithm\dynamic planning\dp-func" />
@@ -66,8 +66,8 @@
       <recent name="C:\Users\xinto\gitrepo\break-algorithm\violence search\backtracking\BFS" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.241.different-ways-to-add-parentheses">
-    <configuration name="241.different-ways-to-add-parentheses" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.220.contains-duplicate-iii">
+    <configuration name="187.repeated-dna-sequences" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="break-algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -75,11 +75,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Divide and Conquer" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/double-pointer/sliding-window" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Divide and Conquer/241.different-ways-to-add-parentheses.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/double-pointer/sliding-window/187.repeated-dna-sequences.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -88,7 +88,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="39. 组合总和combination-sum_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="219.contains-duplicate-ii" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="break-algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -96,11 +96,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/double-pointer/sliding-window" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination/39. 组合总和combination-sum_1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/double-pointer/sliding-window/219.contains-duplicate-ii.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -109,7 +109,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="40. 组合总和 IIcombination-sum-ii（先排序+相同元素仅处理一次：保证去重）" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="220.contains-duplicate-iii" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="break-algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -117,11 +117,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/double-pointer/sliding-window" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recursive/violence search/backtracking/组合(子集)-combination/40. 组合总和 IIcombination-sum-ii（先排序+相同元素仅处理一次：保证去重）.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/double-pointer/sliding-window/220.contains-duplicate-iii.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -130,7 +130,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="42.trapping-rain-water" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="30.substring-with-concatenation-of-all-words" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="break-algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -138,11 +138,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/double-pointer/left-right/[outer-to-center]" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/double-pointer/sliding-window" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/double-pointer/left-right/[outer-to-center]/42.trapping-rain-water.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/double-pointer/sliding-window/30.substring-with-concatenation-of-all-words.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,7 +151,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="526.beautiful-arrangement" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="996.number-of-squareful-arrays" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="break-algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -163,7 +163,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/526.beautiful-arrangement.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/996.number-of-squareful-arrays.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -174,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.241.different-ways-to-add-parentheses" />
-        <item itemvalue="Python.42.trapping-rain-water" />
-        <item itemvalue="Python.526.beautiful-arrangement" />
-        <item itemvalue="Python.39. 组合总和combination-sum_1" />
-        <item itemvalue="Python.40. 组合总和 IIcombination-sum-ii（先排序+相同元素仅处理一次：保证去重）" />
+        <item itemvalue="Python.220.contains-duplicate-iii" />
+        <item itemvalue="Python.219.contains-duplicate-ii" />
+        <item itemvalue="Python.187.repeated-dna-sequences" />
+        <item itemvalue="Python.30.substring-with-concatenation-of-all-words" />
+        <item itemvalue="Python.996.number-of-squareful-arrays" />
       </list>
     </recent_temporary>
   </component>
@@ -359,12 +359,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/60.permutation-sequence.py</url>
-          <line>18</line>
+          <line>17</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/60.permutation-sequence.py</url>
-          <line>23</line>
+          <line>22</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -434,7 +434,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/括号类问题/判断-stack/20.valid-parentheses.py</url>
-          <line>29</line>
+          <line>27</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -456,6 +456,41 @@
           <url>file://$PROJECT_DIR$/括号类问题/生成-backtrack/22.generate-parentheses.py</url>
           <line>10</line>
           <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/996.number-of-squareful-arrays.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/double-pointer/sliding-window/30.substring-with-concatenation-of-all-words.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/double-pointer/sliding-window/30.substring-with-concatenation-of-all-words.py</url>
+          <line>89</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/double-pointer/sliding-window/187.repeated-dna-sequences.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/double-pointer/sliding-window/187.repeated-dna-sequences.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/double-pointer/sliding-window/219.contains-duplicate-ii.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/double-pointer/sliding-window/219.contains-duplicate-ii.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

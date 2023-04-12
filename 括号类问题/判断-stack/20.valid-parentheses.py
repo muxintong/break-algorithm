@@ -7,11 +7,9 @@
 左括号必须以正确的顺序闭合。
 每个右括号都有一个对应的相同类型的左括号。
 """
-import char as char
-
 
 class Solution:
-    def leftof(self, c: char) -> char:
+    def leftof(self, c: chr) -> chr:
         if c == ')':
             return '('
         elif c == ']':

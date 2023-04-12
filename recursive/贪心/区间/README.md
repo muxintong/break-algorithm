@@ -124,7 +124,8 @@ def merge(intervals):
 
 ## [986.区间列表的交集](https://leetcode.cn/problems/interval-list-intersections/)
 
-</br>给定两个由一些闭区间组成的列表，每个区间列表成对不相交，且已经排序。
+</br>给定两个由一些闭区间组成的列表
+
 </br>返回这两个区间列表的交集。
 </br>
 </br>NOTE：区间左右都是闭区间

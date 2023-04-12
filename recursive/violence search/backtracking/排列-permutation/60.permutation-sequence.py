@@ -12,8 +12,7 @@ class Solution:
                 res.append(track.copy())
 
             for i in range(1, n + 1):
-                if used[i]:
-                    continue
+                if used[i]: continue
 
                 elif not used[i]:
                     used[i] = True
