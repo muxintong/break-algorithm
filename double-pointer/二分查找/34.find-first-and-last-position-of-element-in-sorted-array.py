@@ -75,16 +75,19 @@ def main():
     # 输出：[3,4]
     solution1 = Solution()
     print(solution1.searchRange(nums=[5, 7, 7, 8, 8, 10], target=8))
+    print(solution1.searchRange_stl(nums=[5, 7, 7, 8, 8, 10], target=8))
 
     # 输入：nums = [5,7,7,8,8,10], target = 6
     # 输出：[-1,-1]
     solution2 = Solution()
     print(solution2.searchRange(nums=[5, 7, 7, 8, 8, 10], target=6))
+    print(solution2.searchRange_stl(nums=[5, 7, 7, 8, 8, 10], target=6))
 
     # 输入：nums = [], target = 0
     # 输出：[-1,-1]
     solution3 = Solution()
     print(solution3.searchRange(nums=[], target=0))
+    print(solution3.searchRange_stl(nums=[], target=0))
 
     # 输入
     # [5,7,7,8,8,10]
@@ -95,12 +98,14 @@ def main():
     # [-1,-1]
     solution4 = Solution()
     print(solution4.searchRange(nums=[5, 7, 7, 8, 8, 10], target=6))
+    print(solution4.searchRange_stl(nums=[5, 7, 7, 8, 8, 10], target=6))
 
     # 输入
     # [2,2]
     # 3
     solution4 = Solution()
     print(solution4.searchRange(nums=[2, 2], target=3))
+    print(solution4.searchRange_stl(nums=[2, 2], target=3))
 
 
 if __name__ == '__main__':

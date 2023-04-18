@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="49548cc4-5df9-4379-9a5f-d0f8ea12d176" name="Changes" comment="tree">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursive/tree/binary-tree/617.merge-two-binary-trees.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/tree/binary-tree/617.merge-two-binary-trees.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/60.permutation-sequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/60.permutation-sequence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/996.number-of-squareful-arrays.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/996.number-of-squareful-arrays.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursive/贪心/区间/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/recursive/贪心/区间/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/括号类问题/判断-stack/20.valid-parentheses.py" beforeDir="false" afterPath="$PROJECT_DIR$/括号类问题/判断-stack/20.valid-parentheses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/调度算法-页面置换算法：LRU，LFU/lru-README.md" beforeDir="false" afterPath="$PROJECT_DIR$/调度算法-页面置换算法：LRU，LFU/lru-README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/double-pointer/sliding-window/209.minimum-size-subarray-sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/double-pointer/sliding-window/209.minimum-size-subarray-sum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/double-pointer/二分查找/34.find-first-and-last-position-of-element-in-sorted-array.py" beforeDir="false" afterPath="$PROJECT_DIR$/double-pointer/二分查找/34.find-first-and-last-position-of-element-in-sorted-array.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,8 +62,8 @@
       <recent name="C:\Users\xinto\gitrepo\break-algorithm\violence search\backtracking\BFS" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.220.contains-duplicate-iii">
-    <configuration name="187.repeated-dna-sequences" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.34.find-first-and-last-position-of-element-in-sorted-array">
+    <configuration name="209.minimum-size-subarray-sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="break-algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -79,7 +75,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/double-pointer/sliding-window/187.repeated-dna-sequences.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/double-pointer/sliding-window/209.minimum-size-subarray-sum.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -130,7 +126,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="30.substring-with-concatenation-of-all-words" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="239.sliding-window-maximum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="break-algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -142,7 +138,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/double-pointer/sliding-window/30.substring-with-concatenation-of-all-words.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/double-pointer/sliding-window/239.sliding-window-maximum.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,7 +147,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="996.number-of-squareful-arrays" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="34.find-first-and-last-position-of-element-in-sorted-array" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="break-algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -159,11 +155,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/double-pointer/二分查找" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recursive/violence search/backtracking/排列-permutation/996.number-of-squareful-arrays.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/double-pointer/二分查找/34.find-first-and-last-position-of-element-in-sorted-array.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -174,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.34.find-first-and-last-position-of-element-in-sorted-array" />
+        <item itemvalue="Python.239.sliding-window-maximum" />
+        <item itemvalue="Python.209.minimum-size-subarray-sum" />
         <item itemvalue="Python.220.contains-duplicate-iii" />
         <item itemvalue="Python.219.contains-duplicate-ii" />
-        <item itemvalue="Python.187.repeated-dna-sequences" />
-        <item itemvalue="Python.30.substring-with-concatenation-of-all-words" />
-        <item itemvalue="Python.996.number-of-squareful-arrays" />
       </list>
     </recent_temporary>
   </component>
@@ -331,7 +327,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680486978002</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="tree">
+      <created>1681288710577</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1681288710577</updated>
+    </task>
+    <task id="LOCAL-00022" summary="tree">
+      <created>1681289028042</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1681289028042</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -374,17 +384,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/double-pointer/sliding-window/424.longest-repeating-character-replacement.py</url>
-          <line>61</line>
+          <line>62</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/double-pointer/sliding-window/424.longest-repeating-character-replacement.py</url>
-          <line>46</line>
+          <line>47</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/double-pointer/sliding-window/424.longest-repeating-character-replacement.py</url>
-          <line>51</line>
+          <line>52</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
