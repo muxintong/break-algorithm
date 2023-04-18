@@ -35,17 +35,16 @@ class Solution:
         need_len = 10
         window = dict()
 
-        left = 0
-        right = need_len
-        while right < len(s) + 1:
-            window.setdefault(s[left:right], 0)
-            window[s[left:right]] += 1
-            right += 1
-            left += 1
+        for i in range(len(s)):
+            word = s[i:i + need_len]
+            window.setdefault(word, 0)
+            window[word] += 1
 
         res = []
-        for _, k in enumerate(window):
-            if window[k] > 1: res.append(k)
+        for k, v in window.items():
+            if v > 1:
+                res.append(k)
+
         return res
 
 

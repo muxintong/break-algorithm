@@ -59,13 +59,13 @@ class Solution:
 def main():
     # 输入：s = "ADOBECODEBANC", t = "ABC"
     # 输出："BANC"
-    solution1=Solution()
+    solution1 = Solution()
     print(solution1.minWindow("ADOBECODEBANC", "ABC"))
     print('---')
 
     # 输入：s = "a", t = "a"
     # 输出："a"
-    solution2=Solution()
+    solution2 = Solution()
     print(solution2.minWindow("a", "a"))
     print('---')
 
@@ -73,7 +73,7 @@ def main():
     # 输出: ""
     # 解释: t 中两个字符 'a' 均应包含在 s 的子串中，
     # 因此没有符合条件的子字符串，返回空字符串。
-    solution3=Solution()
+    solution3 = Solution()
     print(solution3.minWindow("a", "aa"))
     print('---')
 
@@ -82,8 +82,9 @@ def main():
     # o:a
     # e:aa
     # wrong reason：初始化为window=need=dict(),二者指向同一对象。
-    solution2=Solution()
+    solution2 = Solution()
     print(solution2.minWindow("aa", "aa"))
+
 
 if __name__ == '__main__':
     main()
