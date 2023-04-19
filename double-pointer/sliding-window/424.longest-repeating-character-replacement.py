@@ -18,8 +18,6 @@ def characterReplacement(self, s: str, k: int) -> int:
             l += 1
     return r - l + 1
 """
-
-
 class Solution:
     def characterReplacement(selfs, s: str, k: int) -> int:
         window = {}

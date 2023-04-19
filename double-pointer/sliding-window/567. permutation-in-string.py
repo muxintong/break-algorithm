@@ -45,7 +45,8 @@ def main():
     # Input: s1 = "ab", s2 = "eidboaoo"
     # Output: false
     solution2 = Solution()
-    print(solution2.checkInclusion(s1 = "ab", s2 = "eidboaoo"))
+    print(solution2.checkInclusion(s1="ab", s2="eidboaoo"))
+
 
 if __name__ == '__main__':
     main()

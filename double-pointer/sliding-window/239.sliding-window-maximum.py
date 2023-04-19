@@ -26,7 +26,7 @@ class Solution2:
                 window.push(nums[i])
                 # 记录当前窗口中的最大值
                 res.append(window.max())
-                # 移除做边界的旧数字
+                # 移除左边界的旧数字
                 window.pop(nums[i - k + 1])
 
         return res
